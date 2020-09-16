@@ -11,8 +11,8 @@ Sujets de travaux pratiques d'Algorithmes et C appliqués aux Systèmes Numériq
 * [TP7](TP/TP7/TP7.md)
 
 ## Sujet de projet
-* [Partie 1](Projet/partie1.md  )
-* [Partie 2](Projet/partie2.md)
-* [Partie 3](Projet/partie3.md)
-* [Partie 4](Projet/partie4.md)
-* [Partie 5](Projet/partie5.md)
+* [partie 1](Projet/partie1.md  )
+* [partie 2](Projet/partie2.md)
+* [partie 3](Projet/partie3.md)
+* [partie 4](Projet/partie4.md)
+* [partie 5](Projet/partie5.md)
