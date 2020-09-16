@@ -9,7 +9,7 @@ n\'enverrons pas les images au serveur pour analyse, mais nous
 effectuerons une analyse d\'image côté client et enverrons des rapports
 de synthèse au serveur.
 
-![](./client-server.svg)
+![](./images/client-server.svg)
 
 ## Client-Serveur
 
@@ -72,7 +72,7 @@ et sur le second terminal
 
 Entrez un message et voyez les affichages sur les deux terminaux.
 
-![](./client-server-message.svg)
+![](./images/client-server-message.svg)
 
 Modifiez la fonction recois\_envoie\_message (serveur.c). Quand le
 serveur reçoit un message, il demande à l'utilisateur de saisir un
@@ -90,7 +90,7 @@ une fonction envoie\_nom\_de\_client(\...) dans le fichier client.c
 (C\'est à vous pour décider le nom) et une fonction renvoie\_nom(\...)
 dans le fichier serveur.c qui renvoie le nom.
 
-![](./client-server-nom.svg)
+![](./images/client-server-nom.svg)
 
 ### c. calcul
 
@@ -109,7 +109,7 @@ Le serveur répond
 
 `               calcule : 68              `
 
-![](./client-server-calcul.svg)
+![](./images/client-server-calcul.svg)
 
 Testez votre code avec des nombres à virgule flottante et des entiers.
 
@@ -127,7 +127,7 @@ message suivant
 
 `              couleurs: 10, #0effeee,...             `
 
-![](./client-server-couleurs.svg)
+![](./images/client-server-couleurs.svg)
 
 ## Tâche 2.
 
@@ -240,7 +240,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 #### 1. message
 
-![](./client-server-message.svg)
+![](./images/client-server-message.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -252,7 +252,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 #### 2. nom
 
-![](./client-server-nom.svg)
+![](./images/client-server-nom.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -264,7 +264,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 **3. calcul**
 
-![](./client-server-calcul.svg)
+![](./images/client-server-calcul.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -276,7 +276,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 **4. couleurs**
 
-![](./client-server-couleurs.svg)
+![](./images/client-server-couleurs.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -317,7 +317,7 @@ Le client et le serveur doivent envoyer des valeurs JSON valides.
 
 ### Plusieurs clients
 
-![](./client-server.svg)
+![](./images/client-server.svg)
 
 Votre objectif final pour ce projet est de créer une plate-forme
 multi-client. Jusqu\'à maintenant, vous avez toujours un client et un
