@@ -1,6 +1,6 @@
-### Année: 2019-2020
+# Année: 2019-2020
 
-### Projet
+# Projet
 
 L\'objectif du projet est de créer un environnement client-serveur pour
 l\'analyse et la gestion des images et de leurs métadonnées. Cependant,
@@ -9,9 +9,9 @@ n\'enverrons pas les images au serveur pour analyse, mais nous
 effectuerons une analyse d\'image côté client et enverrons des rapports
 de synthèse au serveur.
 
-![](./client-server.svg){height="400vh"}
+![](./client-server.svg)
 
-### Client-Serveur
+## Client-Serveur
 
 Un environnement client-serveur permet un mode de communication sur un
 réseau entre les programmes. Un de ces programmes est appelé serveur qui
@@ -46,9 +46,9 @@ mission consiste à envoyer différents types de messages.
 4.  Le client envoie N couleurs et le serveur les enregistre dans un
     fichier.
 
-#### Tâche 1.
+## Tâche 1.
 
-##### a. message
+### a. message
 
 Pour simuler un environnement client-serveur, on va utiliser une seule
 machine en lançant deux terminaux. Sur un des deux terminaux exécutez le
@@ -72,7 +72,7 @@ et sur le second terminal
 
 Entrez un message et voyez les affichages sur les deux terminaux.
 
-![](./client-server-message.svg){height="400vh"}
+![](./client-server-message.svg)
 
 Modifiez la fonction recois\_envoie\_message (serveur.c). Quand le
 serveur reçoit un message, il demande à l'utilisateur de saisir un
@@ -80,7 +80,7 @@ message et envoie ce message au client. Testez votre code. N'oubliez pas
 d'utiliser make (pour la compilation et la génération des fichiers
 exécutables).
 
-##### b. nom
+### b. nom
 
 Vous avez remarqué les premiers caractères dans chaque message
 commencent par 'message' et suivi par :. Pour toutes les prochaines
@@ -90,9 +90,9 @@ une fonction envoie\_nom\_de\_client(\...) dans le fichier client.c
 (C\'est à vous pour décider le nom) et une fonction renvoie\_nom(\...)
 dans le fichier serveur.c qui renvoie le nom.
 
-![](./client-server-nom.svg){height="400vh"}
+![](./client-server-nom.svg)
 
-##### c. calcul
+### c. calcul
 
 Votre prochaine mission consiste à effectuer des opérations
 mathématiques côté serveur. Modifiez les fichiers client.c et serveur.c
@@ -109,11 +109,11 @@ Le serveur répond
 
 `               calcule : 68              `
 
-![](./client-server-calcul.svg){height="400vh"}
+![](./client-server-calcul.svg)
 
 Testez votre code avec des nombres à virgule flottante et des entiers.
 
-##### d. couleurs
+### d. couleurs
 
 Votre dernière mission dans cette tâche consiste à écrire une fonction
 envoie\_couleurs(\...) dans le fichier client.c et une fonction
@@ -127,9 +127,9 @@ message suivant
 
 `              couleurs: 10, #0effeee,...             `
 
-![](./client-server-couleurs.svg){height="400vh"}
+![](./client-server-couleurs.svg)
 
-#### Tâche 2.
+## Tâche 2.
 
 Pour cette tâche, notre objectif est d\'utiliser le format d\'image bmp
 et de communiquer entre le serveur et le client à l\'aide du format de
@@ -140,7 +140,7 @@ Références:
 1.  BMP : <https://fr.wikipedia.org/wiki/Windows_bitmap>
 2.  JSON : <https://fr.wikipedia.org/wiki/JavaScript_Object_Notation>
 
-##### a. gnuplot
+### a. gnuplot
 
 Téléchargez les fichiers suivants à partir d'e-campus : client.c,
 client.h, serveur.c, serveur.h, couleur.h, couleur.c, bmp.c, bmp.h,
@@ -175,7 +175,7 @@ travailler avec dix premières couleurs. Modifiez les deux fichiers de
 manière à ce que ce nombre de couleurs (toujours \<=30) soit saisi par
 l'utilisateur. Testez votre code. N'oubliez pas d'utiliser make.
 
-#### b. JSON
+### b. JSON
 
 Nous avons utilisé les messages très simples entre client et serveur
 
@@ -191,7 +191,7 @@ format de messages JSON. Par exemple,
 
 `              {                "code" : "message",                "valeurs" : [ "bonjour"]              }              {                "code" : "calcule",                "valeurs" : [ "+", "23", "45" ]              }              {                "code" : "couleurs",                "valeurs" : [ "#0effeee", "#0effe23", ...]              }             `
 
-#### Tâche 3.
+## Tâche 3.
 
 Pour cette tâche, notre objectif est de nous assurer que le transfert
 des messages entre le client et le serveur respecte le format JSON et le
@@ -203,7 +203,7 @@ Références:
 2.  <https://jsonlint.com/>: JSONLint- The JSON Validator
 3.  JSON : <https://fr.wikipedia.org/wiki/JavaScript_Object_Notation>
 
-#### a. Validation des messages JSON
+### a. Validation des messages JSON
 
 Sans utiliser les bibliothèques externes, créez un fichier C
 *validateur.c* et ajoutez de nouvelles fonctions pour valider les
@@ -227,7 +227,7 @@ Modifiez le code client.c et serveur.c et intégrez les nouvelles
 fonctions de validation pour que le serveur et le client reçoivent
 uniquement des messages JSON valides.
 
-#### b. Validation du protocole de communication
+### b. Validation du protocole de communication
 
 Nous avons seulement autorisé quatre opérations. Notre prochain objectif
 est de nous assurer que la demande envoyée par le client et la réponse
@@ -240,7 +240,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 #### 1. message
 
-![](./client-server-message.svg){height="400vh"}
+![](./client-server-message.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -252,7 +252,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 #### 2. nom
 
-![](./client-server-nom.svg){height="400vh"}
+![](./client-server-nom.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -264,7 +264,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 **3. calcul**
 
-![](./client-server-calcul.svg){height="400vh"}
+![](./client-server-calcul.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -276,7 +276,7 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 **4. couleurs**
 
-![](./client-server-couleurs.svg){height="400vh"}
+![](./client-server-couleurs.svg)
 
 **Exemple de requête envoyé par le client**
 
@@ -286,9 +286,9 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 `              {                "code" : "couleurs",                "valeurs" : [ "enregistré"]              }             `
 
-#### Tâche 4.
+## Tâche 4.
 
-#### a. Opérations
+### a. Opérations
 
 Votre tâche suivante consiste à implémenter les fonctionnalités
 suivantes sur le serveur.
@@ -313,11 +313,11 @@ Le client et le serveur doivent envoyer des valeurs JSON valides.
 
 `              {                "code" : "calcule",                "valeurs" : [ 23 ]              }             `
 
-#### Tâche 5.
+## Tâche 5.
 
-#### Plusieurs clients
+### Plusieurs clients
 
-![](./client-server.svg){height="400vh"}
+![](./client-server.svg)
 
 Votre objectif final pour ce projet est de créer une plate-forme
 multi-client. Jusqu\'à maintenant, vous avez toujours un client et un
