@@ -99,7 +99,7 @@ liste de contrôle suivante:
 #### Modèle de code
 
 Pour référence, vous pouvez consulter le répertoire suivant:
-<https://github.com/johnsamuelwrites/ProgC>. Il contient des modèles de
+<https://github.com/johnsamuelwrites/AlgoC>. Il contient des modèles de
 code pour tous les exercices des sept travaux pratiques.
 
 Vous pouvez le consulter en ligne en utilisant le lien ci-dessus ou le
