@@ -113,3 +113,9 @@ commandes suivantes.
           $ ls
 ```
 
+Pour obtenir les dernières mises à jour du répertoire, vous pouvez exécuter la commande suivante
+
+```
+          $ git pull
+```
+
