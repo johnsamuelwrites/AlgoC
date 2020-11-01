@@ -1,5 +1,18 @@
 ## Tâche 1.
 
+Dans notre première tâche, votre mission consiste à envoyer différents types de messages.
+
+1.  Le client envoie son nom et le serveur renvoie le même nom, en guise
+    d\'accusé de réception.
+2.  Un simple message envoyé par le client, auquel le serveur renvoie
+    une réponse.
+3.  Le client envoie deux numéros et un opérateur mathématique et le
+    serveur répond le résultat de l\'opération.
+4.  Le client envoie N couleurs et le serveur les enregistre dans un
+    fichier.
+5.  Le client envoie N balises et le serveur les enregistre dans un fichier.
+
+
 ### a. message
 
 Pour simuler un environnement client-serveur, on va utiliser une seule
@@ -67,7 +80,7 @@ Testez votre code avec des nombres à virgule flottante et des entiers.
 
 ### d. couleurs
 
-Votre dernière mission dans cette tâche consiste à écrire une fonction
+Votre prochaine mission dans cette tâche consiste à écrire une fonction
 envoie\_couleurs(\...) dans le fichier client.c et une fonction
 recois\_couleurs(\...) dans le fichier serveur.c. Le client envoie N
 couleurs (N\<30) en utilisant le codage RGB
@@ -81,3 +94,17 @@ message suivant
 
 ![](./images/client-server-couleurs.svg)
 
+### e. balises
+
+Votre dernière mission dans cette tâche consiste à écrire une fonction
+envoie\_balises(\...) dans le fichier client.c et une fonction
+recois\_balises(\...) dans le fichier serveur.c. Le client envoie N
+balises (N\<30) et le serveur reçois
+ces balises et les enregistre dans un fichier.
+
+par exemple, si le client veut envoyer 10 balises, il enverra le
+message suivant
+
+`              couleurs: 10, #nature, #arbre,...             `
+
+![](./images/client-server-balises.svg)

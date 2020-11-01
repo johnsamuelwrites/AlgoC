@@ -18,10 +18,19 @@ maximum, écart type.
 Le client et le serveur doivent envoyer des valeurs JSON valides.
 
 **Exemple de requête envoyé par le client**
+```
 
-`              {                "code" : "calcule",                "valeurs" : [ "minimum", 23, 45, 34 ]              }             `
+              {
+                "code" : "calcule",
+                "valeurs" : [ "minimum", 23, 45, 34 ]
+              }             
+```
 
 **Exemple de réponse envoyé par le serveur**
+```
 
-`              {                "code" : "calcule",                "valeurs" : [ 23 ]              }             `
-
+              {
+                "code" : "calcule",
+                "valeurs" : [ 23 ]
+              }             
+```

@@ -58,5 +58,23 @@ Sans utiliser les bibliothèques externes, modifiez le code client.c et
 serveur.c et ajoutez de nouvelles fonctions pour travailler avec le
 format de messages JSON. Par exemple,
 
-`              {                "code" : "message",                "valeurs" : [ "bonjour"]              }              {                "code" : "calcule",                "valeurs" : [ "+", "23", "45" ]              }              {                "code" : "couleurs",                "valeurs" : [ "#0effeee", "#0effe23", ...]              }             `
+```
+              {
+                "code" : "message",
+                "valeurs" : [ "bonjour"]
+              }
+              {
+                "code" : "calcule",
+                "valeurs" : [ "+", "23", "45" ]
+              }
+              {
+                "code" : "couleurs",
+                "valeurs" : [ "#0effeee", "#0effe23", ...]
+              }
+              {
+                "code" : "balises",
+                "valeurs" : [ "#nature", "#arbre", ...]
+              }
+```
+
 
