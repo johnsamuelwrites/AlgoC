@@ -10,8 +10,8 @@ suivantes sur le serveur.
 -   maximum
 -   écart-type
 
-Jusqu\'à présent, vous avez envoyé des opérations simples au serveur: +,
-- etc. Modifiez le code client pour envoyer une liste de nombres et un
+Jusqu\'à présent, vous avez envoyé des opérations simples au serveur: +, - etc.
+Modifiez le code client pour envoyer une liste de nombres et un
 calcul d'opérations avec plus de possibilités: moyenne, minimum,
 maximum, écart type.
 
