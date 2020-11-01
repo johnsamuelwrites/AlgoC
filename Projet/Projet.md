@@ -247,12 +247,33 @@ Par exemple, les messages suivantes sont valides. Vous voyez que nous
 n\'utilisons pas de guillemets pour les nombres, mais nous utilisons des
 guillemets pour les chaînes de caractères.
 
-`              {                "code" : "message",                "valeurs" : [ "bonjour"]              }              {                "code" : "calcule",                "valeurs" : [ "+", 23, 45 ]              }              {                "code" : "couleurs",                "valeurs" : [ 10, "#0effeee", "#0effe23", ...]              }             `
+```
+              {
+                "code" : "message",
+                "valeurs" : [ "bonjour"]
+              }
+              {
+                "code" : "calcule",
+                "valeurs" : [ "+", 23, 45 ]
+              }
+              {
+                "code" : "couleurs",
+                "valeurs" : [ 10, "#0effeee", "#0effe23", ...]
+              }
+              {
+                "code" : "balises",
+                "valeurs" : [ "#nature", "#arbre", ...]
+              }
+```
 
 Mais, la message suivante n\'est pas valide parce que les valeurs
 \'message\' et \'bonjour\' ne figurent pas entre les guillemets.
 
-`              {                "code" : message,                "valeurs" : [ bonjour]              }             `
+```           {
+                "code" : message,
+                "valeurs" : [ bonjour]
+              }
+```
 
 Vous pouvez tester la validité des messages JSON à l\'aide du site en
 ligne <https://jsonlint.com>
@@ -278,59 +299,107 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 **Exemple de requête envoyé par le client**
 
-`              {                "code" : "message",                "valeurs" : [ "bonjour"]              }             `
+```           {
+                "code" : "message",
+                "valeurs" : [ "bonjour"]
+              }
+```
 
 **Exemple de réponse envoyé par le serveur**
 
-`              {                "code" : "message",                "valeurs" : [ "bonjour"]              }             `
+```           {
+                "code" : "message",
+                "valeurs" : [ "bonjour"]
+              }
+```
 
 #### 2. nom
 
 ![](./images/client-server-nom.svg)
 
 **Exemple de requête envoyé par le client**
+```
 
-`              {                "code" : "nom",                "valeurs" : [ "neptune"]              }             `
+              {
+                "code" : "nom",
+                "valeurs" : [ "neptune"]
+              }             
+```
 
 **Exemple de réponse envoyé par le serveur**
+```
 
-`              {                "code" : "nom",                "valeurs" : [ "neptune"]              }             `
+              {
+                "code" : "nom",
+                "valeurs" : [ "neptune"]
+              }             
+```
 
 **3. calcul**
 
 ![](./images/client-server-calcul.svg)
 
 **Exemple de requête envoyé par le client**
+```
 
-`              {                "code" : "calcule",                "valeurs" : [ "+", 23, 45 ]              }             `
+              {
+                "code" : "calcule",
+                "valeurs" : [ "+", 23, 45 ]
+              }             
+```
 
 **Exemple de réponse envoyé par le serveur**
 
-`              {                "code" : "calcule",                "valeurs" : [ 68 ]              }             `
+```
+              {
+                "code" : "calcule",
+                "valeurs" : [ 68 ]
+              }             
+```
 
 **4. couleurs**
 
 ![](./images/client-server-couleurs.svg)
 
 **Exemple de requête envoyé par le client**
+```
 
-`              {                "code" : "couleurs",                "valeurs" : [ 10, "#0effeee", "#0effe23", ...]              }             `
+              {
+                "code" : "couleurs",
+                "valeurs" : [ 10, "#0effeee", "#0effe23", ...]
+              }             
+```
 
 **Exemple de réponse envoyé par le serveur**
+```
 
-`              {                "code" : "couleurs",                "valeurs" : [ "enregistré"]              }             `
+              {
+                "code" : "couleurs",
+                "valeurs" : [ "enregistré"]
+              }             
+```
 
 **5. balises**
 
 ![](./images/client-server-balises.svg)
 
 **Exemple de requête envoyé par le client**
+```
 
-`              {                "code" : "balises",                "valeurs" : [ 10, "#nature", "#arbre", ...]              }             `
+              {
+                "code" : "balises",
+                "valeurs" : [ 10, "#nature", "#arbre", ...]
+              }             
+```
 
 **Exemple de réponse envoyé par le serveur**
+```
 
-`              {                "code" : "balises",                "valeurs" : [ "enregistré"]              }             `
+              {
+                "code" : "balises",
+                "valeurs" : [ "enregistré"]
+              }             
+```
 
 ## Tâche 4.
 
@@ -352,12 +421,22 @@ maximum, écart type.
 Le client et le serveur doivent envoyer des valeurs JSON valides.
 
 **Exemple de requête envoyé par le client**
+```
 
-`              {                "code" : "calcule",                "valeurs" : [ "minimum", 23, 45, 34 ]              }             `
+              {
+                "code" : "calcule",
+                "valeurs" : [ "minimum", 23, 45, 34 ]
+              }             
+```
 
 **Exemple de réponse envoyé par le serveur**
+```
 
-`              {                "code" : "calcule",                "valeurs" : [ 23 ]              }             `
+              {
+                "code" : "calcule",
+                "valeurs" : [ 23 ]
+              }             
+```
 
 ## Tâche 5.
 
