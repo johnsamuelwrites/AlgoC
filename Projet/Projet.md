@@ -28,14 +28,16 @@ Dans ce projet, le serveur connaît uniquement les informations suivantes
 pour chaque client et stocke ces informations.
 
 -   Nom de la machine cliente
--   Nombre d\'images sur l\'ordinateur client
--   Balises d\'image distinctes sur l\'ordinateur client (par exemple,
+-   Balises (hashtags) d\'image distinctes sur l\'ordinateur client (par exemple,
     chats, chiens, etc.)
 -   Couleurs prédominantes des images sur la machine cliente (par
     exemple, \# 2020DE, \# FF3E23, etc.)
 
-Il y a trois tâches dans ce projet. Dans notre première tâche, votre
-mission consiste à envoyer différents types de messages.
+Il y a cinq tâches dans ce projet. 
+
+## Tâche 1.
+
+Dans notre première tâche, votre mission consiste à envoyer différents types de messages.
 
 1.  Le client envoie son nom et le serveur renvoie le même nom, en guise
     d\'accusé de réception.
@@ -45,8 +47,8 @@ mission consiste à envoyer différents types de messages.
     serveur répond le résultat de l\'opération.
 4.  Le client envoie N couleurs et le serveur les enregistre dans un
     fichier.
+5.  Le client envoie N balises et le serveur les enregistre dans un fichier.
 
-## Tâche 1.
 
 ### a. message
 
@@ -115,7 +117,7 @@ Testez votre code avec des nombres à virgule flottante et des entiers.
 
 ### d. couleurs
 
-Votre dernière mission dans cette tâche consiste à écrire une fonction
+Votre prochaine mission dans cette tâche consiste à écrire une fonction
 envoie\_couleurs(\...) dans le fichier client.c et une fonction
 recois\_couleurs(\...) dans le fichier serveur.c. Le client envoie N
 couleurs (N\<30) en utilisant le codage RGB
@@ -128,6 +130,21 @@ message suivant
 `              couleurs: 10, #0effeee,...             `
 
 ![](./images/client-server-couleurs.svg)
+
+### e. balises
+
+Votre dernière mission dans cette tâche consiste à écrire une fonction
+envoie\_balises(\...) dans le fichier client.c et une fonction
+recois\_balises(\...) dans le fichier serveur.c. Le client envoie N
+balises (N\<30) et le serveur reçois
+ces balises et les enregistre dans un fichier.
+
+par exemple, si le client veut envoyer 10 balises, il enverra le
+message suivant
+
+`              couleurs: 10, #nature, #arbre,...             `
+
+![](./images/client-server-balises.svg)
 
 ## Tâche 2.
 
@@ -286,6 +303,18 @@ vérifier que chaque opération ne contient que les valeurs autorisées.
 
 `              {                "code" : "couleurs",                "valeurs" : [ "enregistré"]              }             `
 
+**5. balises**
+
+![](./images/client-server-balises.svg)
+
+**Exemple de requête envoyé par le client**
+
+`              {                "code" : "balises",                "valeurs" : [ 10, "#nature", "#arbre", ...]              }             `
+
+**Exemple de réponse envoyé par le serveur**
+
+`              {                "code" : "balises",                "valeurs" : [ "enregistré"]              }             `
+
 ## Tâche 4.
 
 ### a. Opérations
@@ -325,6 +354,12 @@ serveur à la fois. Mais maintenant, nous voulons que plusieurs clients
 puissent communiquer avec votre serveur à la fois. Modifier votre code
 serveur, afin qu\'il puisse accepter plusieurs requêtes client à la
 fois.
+
+En utilisant le code écrit dans les tâches précédentes, écrire un code
+afin que chaque client informe le serveur des informations suivantes et que le serveur les enregistre.
+-   Nom de la machine cliente
+-   Balises d'image (hashtags) distinctes sur l'ordinateur client
+-   Couleurs prédominantes des images sur la machine cliente
 
 Enfin, écrivez des tests fonctionnels et unitaires pour vérifier si
 
