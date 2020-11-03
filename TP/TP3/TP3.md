@@ -67,8 +67,8 @@ croissant. Si l'entier est présent dans le tableau, affichez le message
 #### Exercice 3.6 [★★]
 
 
-Écrivez un programme en créant le fichier *octets.c* et utilisant char
-* et les opérateurs de pointeurs pour voir les octets d'une variable
+Écrivez un programme en créant le fichier *octets.c* et utilisant char * 
+et les opérateurs de pointeurs pour voir les octets d'une variable
 short, int, long int, float, double et long double.
 
 
