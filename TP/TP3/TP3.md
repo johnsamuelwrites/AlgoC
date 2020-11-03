@@ -96,7 +96,7 @@ Vous devez afficher
 #### Exercice 3.8 [★★★]
 
 
-Ecrivez un programme *chercher.c* qui créer un tableau de 10 phrases (un
+Ecrivez un programme *chercher_phrase.c* qui créer un tableau de 10 phrases (un
 tableau de tableau de caractères). Sans utilisant les fonctions de
 bibliothèques standards ou externes, cherchez si une phrase est dans le
 tableau ou pas. (BONUS, si vous utilisez char **, c'est-à-dire
@@ -105,7 +105,7 @@ l'adresse d'une variable qui contient l'adresse d'une variable char)
 
 #### Fichiers
 
-*chercher.c, couleur_compteur.c, couleurs.c, grand_petit.c, octets.c,
+*chercher_phrase.c, couleur_compteur.c, couleurs.c, grand_petit.c, octets.c,
 recherche_dichotomique.c, sizeof.c, tri.c*
 
 #### Instructions
