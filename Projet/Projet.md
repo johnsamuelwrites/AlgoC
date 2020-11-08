@@ -35,6 +35,14 @@ pour chaque client et stocke ces informations.
 
 Il y a cinq tâches dans ce projet. 
 
+# Environnement de programmation:
+- Système d'exploitation: Linux
+  - Ubuntu
+  - Machine virtuelle (VirtualBox) + Ubuntu
+- Compilateur: gcc
+- Logiciels: gnuplot
+  - Installation: sudo apt install gnuplot
+
 ## Tâche 1.
 
 Dans notre première tâche, votre mission consiste à envoyer différents types de messages.
