@@ -127,3 +127,13 @@ Pour obtenir les dernières mises à jour du répertoire, vous pouvez exécuter 
           $ git pull
 ```
 
+# Author
+* John Samuel
+
+## Archives and Releases
+* [Zenodo]()
+* [Software Heritage](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/johnsamuelwrites/AlgoC)
+* [Release Notes](RELEASE.md)
+
+## Licence
+All code are released under GPLv3+ licence. The associated documentation and other content are released under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
