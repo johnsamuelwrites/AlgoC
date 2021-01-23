@@ -131,7 +131,7 @@ Pour obtenir les dernières mises à jour du répertoire, vous pouvez exécuter 
 * John Samuel
 
 ## Archives and Releases
-* [Zenodo]()
+* [Zenodo](https://doi.org/10.5281/zenodo.4459305)
 * [Software Heritage](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/johnsamuelwrites/AlgoC)
 * [Release Notes](RELEASE.md)
 
