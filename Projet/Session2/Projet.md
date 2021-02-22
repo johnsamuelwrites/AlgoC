@@ -1,12 +1,14 @@
 Année: 2020-2021
 ----------------
 
+# Projet
+
 ## Tâche 1.
 Écrivez un programme en créant deux
-fichiers *operator.h* et *operator.c*. Dans *operator.h*,
+fichiers *operateur.h* et *operateur.c*. Dans *operateur.h*,
 déclarez les fonctions suivantes : somme, différence, produit, quotient,
 modulo, 'et', ou et négation qui utilisent deux variables num1
-(entier), num2 (entier). Implémentez ces fonctions dans *operator.c*.
+(entier), num2 (entier). Implémentez ces fonctions dans *operateur.c*.
 Pour l'opérateur négation, utilisez seulement un numéro.
 
 Considérez une variable op qui contient un de ces différents
@@ -151,7 +153,7 @@ Testez votre code et vérifiez si toutes les tâches précédentes fonctionnent 
 
 #### Fichiers
 
-*client.c, client.h, Makefile, serveur.c, serveur.h, *operator.h*, *operator.c*
+*client.c, client.h, Makefile, serveur.c, serveur.h, *operateur.h*, *operateur.c*
 
 #### Instructions
 
