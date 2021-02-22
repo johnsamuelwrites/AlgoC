@@ -17,6 +17,10 @@ Sujets de travaux pratiques d'Algorithmes et C appliqués aux Systèmes Numériq
 * [partie 4](Projet/partie4.md)
 * [partie 5](Projet/partie5.md)
 
+### Deuxième session
+* [Projet](Projet/Session2/Projet.md)
+
+
 #### Objectifs
 
 L'objectif des travaux pratiques est de créer un projet pour comprendre
