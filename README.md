@@ -1,7 +1,8 @@
 # AlgoC
 Sujets de travaux pratiques d'Algorithmes et C appliqués aux Systèmes Numériques
 
-## Sujets de travaux pratiques
+## Année: 2020-2021
+### Sujets de travaux pratiques
 * [TP1](TP/TP1/TP1.md)
 * [TP2](TP/TP2/TP2.md)
 * [TP3](TP/TP3/TP3.md)
@@ -9,7 +10,7 @@ Sujets de travaux pratiques d'Algorithmes et C appliqués aux Systèmes Numériq
 * [TP5](TP/TP5/TP5.md)
 * [TP6](TP/TP6/TP6.md)
 
-## Sujet de projet
+### Sujet de projet
 [Projet](Projet/Projet.md  )
 * [partie 1](Projet/partie1.md  )
 * [partie 2](Projet/partie2.md)
