@@ -1,3 +1,7 @@
+# v1.1
+===============================================================================
+* Add project for second session (examinations: 2020-21) 
+
 # v1.0
 ===============================================================================
 * Sujets de travaux pratiques et projet d'Algorithmes et C appliqués aux Systèmes Numériques
