@@ -71,8 +71,7 @@ de tous les exercices, vous serez captable de
 
 1.  Les travaux pratiques correspondent à 40% de votre note finale
 2.  Vous avez sept travaux pratiques. Chaque travail pratique (TP)
-    comporte plusieurs exercices. Chaque exercice est noté. Le septième
-    TP est comptabilisé en bonus.
+    comporte plusieurs exercices. Chaque exercice est noté. 
 3.  Total points pour tous les travaux pratiques: 20
 4.  Rendu en ligne.
 5.  Chaque question a un niveau de difficulté
