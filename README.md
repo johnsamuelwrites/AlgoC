@@ -2,15 +2,22 @@
 Sujets de travaux pratiques d'Algorithmes et C appliqués aux Systèmes Numériques
 
 ## Année: 2021-2022
-### Sujets de travaux pratiques
-* [TP1](TP/TP1/TP1.md)
-* [TP2](TP/TP2/TP2.md)
-* [TP3](TP/TP3/TP3.md)
-* [TP4](TP/TP4/TP4.md)
-* [TP5](TP/TP5/TP5.md)
-* [TP6](TP/TP6/TP6.md)
+### Sujets de travaux pratiques (Groupe 1)
+* [TP1](Groupe1/TP1/TP1.md)
+* [TP2](Groupe1/TP2/TP2.md)
+* [TP3](Groupe1/TP3/TP3.md)
+* [TP4](Groupe1/TP4/TP4.md)
+* [TP5](Groupe1/TP5/TP5.md)
 
-### Sujet de projet
+### Sujets de travaux pratiques (Groupe 2)
+* [TP1](Groupe2/TP1/TP1.md)
+* [TP2](Groupe2/TP2/TP2.md)
+* [TP3](Groupe2/TP3/TP3.md)
+* [TP4](Groupe2/TP4/TP4.md)
+* [TP5](Groupe2/TP5/TP5.md)
+* [TP6](Groupe2/TP6/TP6.md)
+
+### Sujet de projet (Groupe 3)
 [Projet](Projet/Projet.md  )
 * [partie 1](Projet/partie1.md  )
 * [partie 2](Projet/partie2.md)
