@@ -102,6 +102,8 @@ dans le fichier serveur.c qui renvoie le nom.
 
 ![](./images/client-server-nom.svg)
 
+**Astuce** : Vous pouvez utiliser la fonction gethostname(...) (unistd.h) pour obtenir le nom de votre machine. Ne demandez pas le nom de votre machine à l'utilisateur.
+
 ### c. calcul
 
 Votre prochaine mission consiste à effectuer des opérations
