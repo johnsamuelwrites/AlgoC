@@ -11,29 +11,49 @@ Année: 2021-2022
 
  
 Créez un fichier *bonjour.c* et écrivez un programme qui affiche
-**"bonjour le monde!"** à l'écran. Compilez ce fichier en utilisant
-gcc et exécutez le code.
+`"bonjour le monde!"` à l'écran. 
 
+Compilez ce fichier en utilisant gcc et exécutez le code en exécutant les commandes suivantes sur le terminal.
+
+```
+$ gcc bonjour.c
+$ ./a.out
+```
+
+Vous pouvez également renommer votre exécutable en utilisant l'option '-o'.
+
+```
+$ gcc -o bonjour bonjour.c 
+$ ./bonjour
+```
+
+Pour voir tous les avertissements (*warnings*) pendant la compilation, vous pouvez utiliser les options `-Wall` et `-Wextra`.
+
+```
+$ gcc -Wall -o bonjour bonjour.c 
+$ ./bonjour
+```
 
 #### Exercice 1.2 [★]
 
  
-Ecrivez un programme *cercle.c* qui calcule l'aire et le périmètre d'un
+Écrivez un programme *cercle.c* qui calcule l'aire et le périmètre d'un
 cercle
 
-a.  l'aire: Utilisez une variable **rayon** : float ou double
+a.  l'aire: Utilisez une variable `rayon` : float ou double
 
-b.  le périmètre: Utilisez une variable **rayon** : float ou double
+b.  le périmètre: Utilisez une variable `rayon` : float ou double
 
-c.  Compilez *cercle.c* et créez un fichier éxecutable nommé cercle
 
-d.  Exécutez 'cercle'
+Compilez *cercle.c* et créez un fichier éxecutable nommé cercle
+
+Exécutez 'cercle'
 
 
 #### Exercice 1.3 [★]
 
  
-Ecrivez un programme *sizeof_types.c* qui affiche la taille des
+Écrivez un programme *sizeof_types.c* qui affiche la taille des
 différents types de base (en octets) :
 
 i.  char
@@ -53,14 +73,14 @@ vii. double
 viii. long double
 
 
-Ne pas oubliez d'utiliser les versions signées et non-signées. Testez le
-programme (compilez et exécuter).
+N'oubliez pas d'utiliser les versions signées (`signed`) et non-signées (`unsigned`). Testez le
+programme (compilez et exécutez).
 
 
 #### Exercice 1.4 [★★]
 
  
-Ecrivez un programme *variables.c* qui affecte et affiche les valeurs
+Écrivez un programme *variables.c* qui affecte et affiche les valeurs
 des variables des différents types de base :
 
 i.  char
@@ -80,19 +100,19 @@ vii. double
 viii. long double
 
 
-N'oubliez pas d'utiliser les versions signées et non-signées. Testez
+N'oubliez pas d'utiliser les versions signées (`signed`) et non-signées (`unsigned`). Testez
 le programme.
 
 
 #### Exercice 1.5 [★★]
 
  
-Ecrivez un programme *opérateurs.c* qui utilise deux variables
+Écrivez un programme *opérateurs.c* qui utilise deux variables
 suivantes:
 
-i.  **a** = 16
+i.  `a` = 16
 
-ii. **b** = 3
+ii. `b` = 3
 
 et testez les différents opérateurs arithmétiques et logiques.
 
@@ -100,10 +120,10 @@ et testez les différents opérateurs arithmétiques et logiques.
 #### Exercice 1.6 [★★]
 
  
-Ecrivez un programme *boucles.c* qui utilise **for**, # et * et qui
+Écrivez un programme *boucles.c* qui utilise `for`, # et * et qui
 affiche un triangle rectangle. La taille du triangle est dependent de la
-valeur de la variable **compter** (**compter** < 4 inacceptable).
-Exemple, si **compter** = 5, le programme affiche
+valeur de la variable `compteur` (`compteur` < 4 inacceptable).
+Exemple, si `compteur` = 5, le programme affiche
 
 ```
 *              
@@ -113,17 +133,16 @@ Exemple, si **compter** = 5, le programme affiche
 * * * * *
 ```
 
-Testez le code avec les différentes valeurs de compter. Ecrivez une
-nouvelle version du code en utilisant **while** ou **do..while**.
+Testez le code avec les différentes valeurs de `compteur`. Écrivez une
+nouvelle version du code en utilisant `while` ou `do..while`.
 
 
 #### Exercice 1.7 [★★]
 
  
-Ecrivez un programme *conditions.c* qui utilise les boucles (**for**,
-**while** ou **do..while**) et les branchements inconditionnels (break
-ou continue) pour l'affichage de numéros <= 1000 qui sont divisible par
-:
+Écrivez un programme *conditions.c* qui utilise les boucles (`for`,
+`while` ou `do..while`) et les branchements inconditionnels (break
+ou continue) pour l'affichage de numéros <= 1000 qui sont divisible par:
 
 a.  2 et 15
 
@@ -133,29 +152,29 @@ c.  7 ou 5, mais pas par 3
 
 
 
-#### Exercice 1.8 [★★★]
+#### Exercice 1.8 [★★]
 
  
-Ecrivez un programme *opérateurs2.c* qui utilise trois variables
+Écrivez un programme *opérateurs2.c* qui utilise trois variables
 
-1.  **num1** (entier)
-2.  **num2** (entier)
-3.  **op** (un caractère)
+1.  `num1` (entier)
+2.  `num2` (entier)
+3.  `op` (un caractère)
 
-La variable **op** contient un de ces différents opérateurs. (+, -, \*,
-/, %, &, |, ~). Utilisez **switch** et réutilisez le code de votre
+La variable `op` contient un de ces différents opérateurs. (+, -, \*,
+/, %, &, |, ~). Utilisez `switch` et réutilisez le code de votre
 premier exercice. Si c est égal à '+', le programme fait l'addition de
-deux variables **num1** et **num2**, si **op** est égal à '&', le
+deux variables `num1` et `num2`, si `op` est égal à '&', le
 programme fait l'opération ET etc. Rappelez-vous bien que l'on ne peut
-pas utiliser chaine de caractères comme condition en **switch**. Testez
-votre programme avec différents valeurs de **num1**, num2, **op**
+pas utiliser chaine de caractères comme condition en `switch`. Testez
+votre programme avec différents valeurs de `num1`, `num2`, `op`. 
 
 
 #### Exercice 1.9 [★★★]
 
  
-Ecrivez un programme *binaire.c* qui utilise **for** pour l'affichage
-d'une variable int en format binaire. Rappelez-vous bien que printf n'a
+Écrivez un programme *binaire.c* qui utilise `for` pour l'affichage
+d'une variable `int` en format binaire. Rappelez-vous bien que printf n'a
 pas de code de conversion comme x (l'affichage d'un numéro en notation
 hexadécimale) ou o (l'affichage d'un numéro en notation octale) pour
 l'affichage en notation binaire. Testez votre code avec les 5 numéros
@@ -164,7 +183,7 @@ suivants : 0, 4096, 65536, 65535, 1024
 
 #### Astuce
 
--   Utilisez les boucles dans une boucle et **if** (Exercice 1.6)
+-   Utilisez les boucles dans une boucle et `if` (Exercice 1.6)
 -   Pour l'exercice 1.9, pensez à utiliser les opérateurs pour la
     manipulation de bits (&, | ou ~)
 
@@ -175,24 +194,25 @@ opérateurs.c, sizeof_types.c, variables.c*
 
 #### Instructions
 
--   Ne pas oubliez les commentaires (nom de fichier, objectif, auteurs
+-   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs
     etc.)
--   Créez README et ajoutez les détails concernant votre premiez
+-   Créez un fichier README et ajoutez les détails concernant votre premier
     exercice.
 
 #### Exemple
 
  
-**CONTRIBUTORS**
+##### CONTRIBUTORS
 
 ```             
  1. NOM Prénom
  2. NOM Prénom
-`
+```             
 
-**README**
 
-`             
+##### README
+
+```             
 # Bibliothèques:               
 * stdio.h               
 * ..              
@@ -210,6 +230,3 @@ opérateurs.c, sizeof_types.c, variables.c*
 * commentaire 2               
 * ..             
 ```
-
-
-
