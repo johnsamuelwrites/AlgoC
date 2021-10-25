@@ -86,9 +86,9 @@ Entrez un message et voyez les affichages sur les deux terminaux.
 
 Modifiez la fonction recois\_envoie\_message (serveur.c). Quand le
 serveur reçoit un message, il demande à l'utilisateur de saisir un
-message et envoie ce message au client. Testez votre code. N'oubliez pas
-d'utiliser make (pour la compilation et la génération des fichiers
-exécutables).
+message et envoie ce message au client. Testez votre code. 
+
+**Attention**: N'oubliez pas d'utiliser make (pour la compilation et la génération des fichiers exécutables).
 
 ### b. nom
 
