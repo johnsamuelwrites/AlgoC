@@ -52,7 +52,10 @@ Nous avons utilisé les messages très simples entre client et serveur
 
 par exemple
 
-`              calcule: + 23 45              couleurs: 10, #0effeee,...             `
+```
+              calcule: + 23 45
+              couleurs: 10, #0effeee,...
+```
 
 Sans utiliser les bibliothèques externes, modifiez le code client.c et
 serveur.c et ajoutez de nouvelles fonctions pour travailler avec le
