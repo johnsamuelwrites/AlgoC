@@ -41,7 +41,7 @@ Il y a cinq tâches dans ce projet.
   - Machine virtuelle (VirtualBox) + Ubuntu
 - Compilateur: gcc
 - Logiciels: gnuplot
-  - Installation: sudo apt install gnuplot
+  - Installation: sudo apt install gnuplot gnuplot-x11
 
 ## Tâche 1.
 
