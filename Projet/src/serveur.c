@@ -61,7 +61,7 @@ int renvoie_message(int client_socket_fd, char *data) {
     perror("erreur ecriture");
     return(EXIT_FAILURE);
   }
-  return 0;
+  return (0);
 }
 
 /* accepter la nouvelle connection d'un client et lire les données

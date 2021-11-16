@@ -125,8 +125,6 @@ int main(int argc, char **argv) {
     perror("connection serveur");
     exit(EXIT_FAILURE);
   }
-  
-  
   if (argc != 2) {
     // envoyer et recevoir un message
     envoie_recois_message(socketfd);
