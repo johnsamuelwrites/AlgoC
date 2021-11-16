@@ -20,7 +20,7 @@ void plot(char *data) {
 
   //Extraire le compteur et les couleurs RGB 
   FILE *p = popen("gnuplot -persist", "w");
-  printf("Plot");
+  printf("Plot\n");
   int count = 0;
   int n;
   char *saveptr = NULL;
@@ -31,13 +31,15 @@ void plot(char *data) {
   fprintf(p, "set title 'Top 10 colors'\n");
   fprintf(p, "plot '-' with circles lc rgbcolor variable\n");
   while(1) {
-    char *token = strtok_r(str, ",", &saveptr);
+    char *token = strtok_r(str, ", ", &saveptr);
     if (token == NULL) {
       break;
     }
     str=NULL;
-    if (count == 0) {
+    printf("%d: %s\n", count, token);
+    if (count == 1) {
       n = atoi(token);
+      printf("n = %d\n", n);
     }
     else {
       // Le numéro 36, parceque 360° (cercle) / 10 couleurs = 36
@@ -59,6 +61,7 @@ int renvoie_message(int client_socket_fd, char *data) {
     perror("erreur ecriture");
     return(EXIT_FAILURE);
   }
+  return(0);
 }
 
 /* accepter la nouvelle connection d'un client et lire les données
@@ -69,7 +72,7 @@ int recois_envoie_message(int socketfd) {
   struct sockaddr_in client_addr;
   char data[1024];
 
-  int client_addr_len = sizeof(client_addr);
+  unsigned int client_addr_len = sizeof(client_addr);
  
   // nouvelle connection de client
   int client_socket_fd = accept(socketfd, (struct sockaddr *) &client_addr, &client_addr_len);
@@ -107,15 +110,15 @@ int recois_envoie_message(int socketfd) {
 
   //fermer le socket 
   close(socketfd);
+  return (0);
 }
 
 int main() {
 
   int socketfd;
   int bind_status;
-  int client_addr_len;
 
-  struct sockaddr_in server_addr, client_addr;
+  struct sockaddr_in server_addr;
 
   /*
    * Creation d'une socket
