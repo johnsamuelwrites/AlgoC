@@ -5,6 +5,9 @@ SOBJS ?= serveur.o
 
 CFLAGS ?= -Wall -Wextra
 
+# Déboggage
+DEBUG ?= -ggdb3
+
 .SUFFIXES: .c .o
 
 SERVER = serveur
@@ -13,11 +16,11 @@ CLIENT = client
 all: $(SERVER) $(CLIENT)
 
 $(SERVER): $(SOBJS)
-	$(CC) $(CFLAGS) -o $(SERVER) $(SOBJS)
+	$(CC) $(DEBUG) $(CFLAGS) -o $(SERVER) $(SOBJS)
 
 $(CLIENT): $(COBJS)
-	$(CC) $(CFLAGS) -o $(CLIENT) $(COBJS)
+	$(CC) $(DEBUG) $(CFLAGS) -o $(CLIENT) $(COBJS)
 
 .c.o: 
-	$(CC) $(CFLAGS) -c $*.c
+	$(CC) $(DEBUG) $(CFLAGS) -c $*.c
 
