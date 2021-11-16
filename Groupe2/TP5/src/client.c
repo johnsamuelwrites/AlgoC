@@ -58,9 +58,8 @@ int envoie_recois_message(int socketfd) {
 
 int main() {
   int socketfd;
-  int bind_status;
 
-  struct sockaddr_in server_addr, client_addr;
+  struct sockaddr_in server_addr;
 
   /*
    * Creation d'une socket
