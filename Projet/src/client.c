@@ -101,9 +101,8 @@ int envoie_couleurs(int socketfd, char *pathname) {
 
 int main(int argc, char **argv) {
   int socketfd;
-  int bind_status;
 
-  struct sockaddr_in server_addr, client_addr;
+  struct sockaddr_in server_addr;
 
   /*
    * Creation d'une socket
