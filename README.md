@@ -55,7 +55,7 @@ de tous les exercices, vous serez captable de
   - Machine virtuelle (VirtualBox) + Ubuntu
 - Compilateur: gcc
 - Logiciels: gnuplot
-  - Installation: sudo apt install gnuplot
+  - Installation: sudo apt install gnuplot gnuplot-x11
   
 #### Instructions
 
