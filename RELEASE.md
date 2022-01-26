@@ -1,3 +1,10 @@
+# v1.2
+===============================================================================
+* Sujets de travaux pratiques et projet d'Algorithmes et C appliqués aux Systèmes Numériques (examinations: 2021-22) 
+ - Création des groupes
+ - Mettre à jour et ajouter plus de précisions dans les programmes
+ - Ajouter des clarifications
+
 # v1.1
 ===============================================================================
 * Add project for second session (examinations: 2020-21) 
