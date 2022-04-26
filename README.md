@@ -3,30 +3,31 @@ Sujets de travaux pratiques d'Algorithmes et C appliqués aux Systèmes Numériq
 
 ## Année: 2021-2022
 ### Sujets de travaux pratiques (Groupe 1)
-* [TP1](Groupe1/TP1/TP1.md)
-* [TP2](Groupe1/TP2/TP2.md)
-* [TP3](Groupe1/TP3/TP3.md)
-* [TP4](Groupe1/TP4/TP4.md)
-* [TP5](Groupe1/TP5/TP5.md)
+- [TP1](Groupe1/TP1/TP1.md)
+- [TP2](Groupe1/TP2/TP2.md)
+- [TP3](Groupe1/TP3/TP3.md)
+- [TP4](Groupe1/TP4/TP4.md)
+- [TP5](Groupe1/TP5/TP5.md)
 
 ### Sujets de travaux pratiques (Groupe 2)
-* [TP1](Groupe2/TP1/TP1.md)
-* [TP2](Groupe2/TP2/TP2.md)
-* [TP3](Groupe2/TP3/TP3.md)
-* [TP4](Groupe2/TP4/TP4.md)
-* [TP5](Groupe2/TP5/TP5.md)
-* [TP6](Groupe2/TP6/TP6.md)
+- [TP1](Groupe2/TP1/TP1.md)
+- [TP2](Groupe2/TP2/TP2.md)
+- [TP3](Groupe2/TP3/TP3.md)
+- [TP4](Groupe2/TP4/TP4.md)
+- [TP5](Groupe2/TP5/TP5.md)
+- [TP6](Groupe2/TP6/TP6.md)
 
 ### Sujet de projet (Groupe 3)
-[Projet](Projet/Projet.md  )
-* [partie 1](Projet/partie1.md  )
-* [partie 2](Projet/partie2.md)
-* [partie 3](Projet/partie3.md)
-* [partie 4](Projet/partie4.md)
-* [partie 5](Projet/partie5.md)
+[Projet](Projet/Projet.md)
+
+- [partie 1](Projet/partie1.md)
+- [partie 2](Projet/partie2.md)
+- [partie 3](Projet/partie3.md)
+- [partie 4](Projet/partie4.md)
+- [partie 5](Projet/partie5.md)
 
 ### Deuxième session
-* [Projet](Projet/Session2/Projet.md)
+- [Projet](Projet/Session2/Projet.md)
 
 
 #### Objectifs
@@ -139,12 +140,12 @@ Pour obtenir les dernières mises à jour du répertoire, vous pouvez exécuter 
 ```
 
 # Author
-* John Samuel
+- John Samuel
 
 ## Archives and Releases
-* [Zenodo](https://doi.org/10.5281/zenodo.4459305)
-* [Software Heritage](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/johnsamuelwrites/AlgoC)
-* [Release Notes](RELEASE.md)
+- [Zenodo](https://doi.org/10.5281/zenodo.4459305)
+- [Software Heritage](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/johnsamuelwrites/AlgoC)
+- [Release Notes](RELEASE.md)
 
 ## Licence
 All code are released under GPLv3+ licence. The associated documentation and other content are released under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
