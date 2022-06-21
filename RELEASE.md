@@ -1,3 +1,7 @@
+# v1.3
+===============================================================================
+- Suppport Jekyll Theme
+
 # v1.2
 ===============================================================================
 * Sujets de travaux pratiques et projet d'Algorithmes et C appliqués aux Systèmes Numériques (examinations: 2021-22) 
