@@ -1,7 +1,7 @@
 # AlgoC
-Sujets de travaux pratiques d'Algorithmes et C appliqués aux Systèmes Numériques
+Sujets de travaux pratiques du module **Algorithmes et C appliqués aux Systèmes Numériques**
 
-## Année: 2021-2022
+## Année: 2022-2023
 ### Sujets de travaux pratiques (Groupe 1)
 - [TP1](Groupe1/TP1/TP1.md)
 - [TP2](Groupe1/TP2/TP2.md)
@@ -36,37 +36,38 @@ L'objectif des travaux pratiques est de créer un projet pour comprendre
 les différents aspects de programmation en C. Suite à l'accomplissement
 de tous les exercices, vous serez captable de
 
--   Créer, compiler et exécuter un projet C
 -   Comprendre la chaine de compilation en utilisant GCC (GNU
-    compilation chain) : prétraitement jusqu'à l'exécution
+    compilation chain) : du prétraitement jusqu'à l'exécution
 -   Travailler avec les bibliothèques standards et les appels de système
     d'exploitation (fichiers, les sockets réseau etc.)
 -   Comprendre les pointeurs et manipuler les buffers en utilisant les
     pointeurs
+-   Créer, compiler et exécuter un projet en C
 -   Travailler avec les différents formats de données comme BMP et les
     structures de données
 -   Créer un simple programme client-serveur pour le transfert de
-    fichiers et messages
--   Exécuter les applications existantes sur la machine (e.g. GNU plot)
--   Documenter et tester une application
+    fichiers et de messages
+-   Exécuter les applications existantes sur la machine (par exemple, GNU plot)
+-   Documenter une application en utilisant le format markdown (\*.md)
+-   Tester une application
 
 #### Environnement de programmation:
 - Système d'exploitation: Linux
   - Ubuntu
   - Machine virtuelle (VirtualBox) + Ubuntu
-- Compilateur: gcc
+- Compilateur: `gcc`
 - Logiciels: gnuplot
-  - Installation: sudo apt install gnuplot gnuplot-x11
+  - Installation: `sudo apt install gnuplot gnuplot-x11`
   
 #### Instructions
 
 1.  Tous les travaux pratiques sont basés sur les aspects que vous avez
     déjà appris pendant vos cours. Utilisez-bien vos supports cours.
-2.  Travailler en binôme.
-3.  Il est obligatoire de citer tous les sources (e.g. internet,
+2.  Travaillez en binôme.
+3.  Il est obligatoire de citer toutes les sources (par exemple, internet,
     groupes)
 4.  Les séances sont encadrées par 2 enseignants.
-5.  Ne pas utiliser des bibliothèques externes.
+5.  N'utilisez pas des bibliothèques externes.
 
 #### Evaluation
 
@@ -82,20 +83,20 @@ de tous les exercices, vous serez captable de
 
 #### Rendus
 
-Il y a deux parties de rendu: rapport d'auto-évaluation et les sources
+Il y a deux parties de rendu: le rapport d'auto-évaluation et les sources
 
 Votre dossier de rendu doit contenir les fichiers suivants:
 
-- a.  README: rapport d'auto-évaluation
-- b.  CONTRIBUTORS: Noms et prénoms de contributeurs
+- a.  README.md: rapport d'auto-évaluation
+- b.  CONTRIBUTORS.md: Noms et prénoms de contributeurs
 - c.  src/ : le code source dans le répertoire *src*
 
-Votre rendu doit renommer comme groupe_N1_N2, où N1 et N2 sont les
+Votre rendu doit être renommé groupe_N1_N2, où N1 et N2 sont les
 noms (e.g., groupe_DUPONT_SMITH.).
 
-Ecrivez README et CONTRIBUTORS en format markdown.
+Ecrivez README.md et CONTRIBUTORS.md en format markdown.
 
-Le contenu de README rapport d'auto-évaluation : TP N (N: [1..7])
+Le contenu de README.md ou le rapport d'auto-évaluation : TP N (N: [1..7])
 
 - i.  Bibliothèques: les bibliothèques standards
 - ii. Références: les URLs, les groupes
@@ -105,12 +106,12 @@ Le contenu de README rapport d'auto-évaluation : TP N (N: [1..7])
 
 #### Liste de contrôle
 
-Avant de déposer votre travail pratique, vérifiez si vous respectez la
+Avant de déposer votre travail pratique, assurez-vous de respecter la 
 liste de contrôle suivante:
 
 -   ✅ Les noms (prénom et noms) de la binôme sont présents dans le
-    fichier CONTRIBUTORS
--   ✅ Le fichier README est complètement rempli.
+    fichier CONTRIBUTORS.md
+-   ✅ Le fichier README.md est complètement rempli.
 -   ✅ Respectez les noms de fichiers de chaque exercice. Utilisez le
     même nom que celui qui a été demandé dans les travaux pratiques.
 -   ✅ Votre code est bien commenté.
@@ -138,6 +139,11 @@ Pour obtenir les dernières mises à jour du répertoire, vous pouvez exécuter 
 ```
           $ git pull
 ```
+
+#### ⚠️ Attention
+- Aucune soumission par courriel électronique.
+- Les liens vers des sites externes comme GitHub/GitLab,... ne seront pas acceptés. 
+- Seules les soumissions complètes sur E-Campus seront acceptées pour l'évaluation.
 
 # Author
 - John Samuel
