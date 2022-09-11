@@ -143,6 +143,7 @@ Testez votre code avec les numéros flottants et entiers.
 
 #### Exercice 5.6 [★★★]
 
+
 Pour votre dernière question, téléchargez le dossier etudiant. Dans ce
 dossier, il y a 5 notes de 5 étudiants. Utilisez
 envoie_operateur_numeros (voir 6) pour calculer la somme total des
@@ -168,7 +169,6 @@ Par exemple, le client effectue une série d'appels suivants :
 Vous devrez modifier le serveur pour qu'il puisse lire et répondre aux messages du client dans une boucle infinie.  
 
 Pour cet exercice, le serveur ne doit pas lire d'informations provenant des fichiers de l'élève. Le but du serveur est d'effectuer des calculs arithmétiques simples. Seul le client peut lire les fichiers relatifs aux notes des élèves et envoyer une série de messages au serveur pour obtenir la somme totale, la moyenne, etc. 
-
 
 #### Fichiers
 
