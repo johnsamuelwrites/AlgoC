@@ -78,7 +78,7 @@ répond aux requêtes d'autres programmes appelés clients. Par exemple,
 
 Référence : <https://fr.wikipedia.org/wiki/Client-serveur>
 
-![](../images/client-server.svg)
+![](../Project/images/client-server.svg)
 
 Pour simuler un environnement client-serveur, on va utiliser une seule
 machine en lançant deux terminaux. Sur un des deux terminaux exécutez le
@@ -114,7 +114,7 @@ message et envoie ce message au client. Testez votre code. N'oubliez pas
 d'utiliser make (pour la compilation et la génération des fichiers
 exécutables).
 
-![](../images/client-server-message.svg)
+![](../Project/images/client-server-message.svg)
 
 #### Exercice 5.5 [★★★]
 
@@ -142,7 +142,7 @@ calcule : 68
 
 Testez votre code avec les numéros flottants et entiers.
 
-![](../images/client-server-calcul.svg)
+![](../Project/images/client-server-calcul.svg)
 
 #### Exercice 5.6 [★★★]
 
