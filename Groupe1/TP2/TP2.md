@@ -7,6 +7,11 @@ Année: 2021-2022
 
 -   Comprendre les opérateurs, les tableaux, les pointeurs et les
     structures.
+-   Créer, lire et manipuler des chaînes de caractères sans utiliser 
+    les bibliothèques standards ou externes.
+-   Créer, lire et manipuler des structures de données construites à l'aide de `struct`
+-   Créer, lire et manipuler des tableaux
+-   Lire et manipuler des variables en utilisant des pointeurs
 
 #### Exercice 2.1 [★]
 
@@ -120,8 +125,8 @@ Utilisez les pointeurs.
 
 #### Astuce
 
--   Pour l'exercice 2.5, pensez à utiliser *(s+i) etc (e.g, si s est
-    un pointeur de type int *).
+-   Pour l'exercice 2.5, pensez à utiliser \*(s+i) etc (e.g, si s est
+    un pointeur de type int \*).
 
 #### Fichiers
 
@@ -132,7 +137,7 @@ ptrvariables.c, puissance.c, tableauptr.c*
 
 -   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs,
     , les lignes importantes de code etc.). Les commentaires sont notés.
--   N'oubliez pas de mettre à jour le fichier README et ajouter les
+-   N'oubliez pas de mettre à jour le fichier README.md et ajouter les
     détails concernant votre deuxième exercice.
 -   Compte rendu en format .zip en un seul fichier.
 

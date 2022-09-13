@@ -7,23 +7,6 @@ Année: 2021-2022
 
 -   Comprendre la programmation client-serveur.
 
-### Client-Serveur
-
-Un environnement client-serveur permet un mode de communication sur un
-réseau entre les programmes. Un de ces programmes est appelé serveur qui
-répond aux requêtes d'autres programmes appelés clients. Par exemple,
-
-1.  Un client envoie un message au serveur et le serveur reçoit le
-    message et le renvoie.
-2.  Un client envoie l'opérateur et un/deux numéros et le serveur fait
-    le calcul et envoie le résultat.
-
-Référence : <https://fr.wikipedia.org/wiki/Client-serveur>
-
-Pour simuler un environnement client-serveur, on va utiliser une seule
-machine en lançant deux terminaux. Sur un des deux terminaux exécutez le
-code du serveur. Sur l'autre, exécutez le code du client.
-
 #### Exercice 5.1 [★]
 
 
@@ -82,6 +65,24 @@ do..while) pour implémenter cette fonction. Testez votre code.
 
 #### Exercice 5.4 [★★]
 
+##### Client-Serveur
+
+Un environnement client-serveur permet un mode de communication sur un
+réseau entre les programmes. Un de ces programmes est appelé serveur qui
+répond aux requêtes d'autres programmes appelés clients. Par exemple,
+
+1.  Un client envoie un message au serveur et le serveur reçoit le
+    message et le renvoie.
+2.  Un client envoie l'opérateur et un/deux numéros et le serveur fait
+    le calcul et envoie le résultat.
+
+Référence : <https://fr.wikipedia.org/wiki/Client-serveur>
+
+![](../images/client-server.svg)
+
+Pour simuler un environnement client-serveur, on va utiliser une seule
+machine en lançant deux terminaux. Sur un des deux terminaux exécutez le
+code du serveur. Sur l'autre, exécutez le code du client.
 
 Téléchargez les fichiers suivants à partir d'e-campus : *client.h*,
 *client.c*, *serveur.h*, *serveur.c*, *Makefile*. Lisez bien tous les fichiers.
@@ -113,6 +114,7 @@ message et envoie ce message au client. Testez votre code. N'oubliez pas
 d'utiliser make (pour la compilation et la génération des fichiers
 exécutables).
 
+![](../images/client-server-message.svg)
 
 #### Exercice 5.5 [★★★]
 
@@ -122,7 +124,7 @@ Vous avez remarqué les premiers caractères dans chaque message :
 calcule. 
 
 Modifiez les fichiers client.c et serveur.c pour le support des
-calculs simples (+,-,*,...). Ajoutez une fonction
+calculs simples (+,-,\*,...). Ajoutez une fonction
 `envoie_operateur_numeros(...)` dans le fichier client.c et
 `recois_numeros_calcule(...)` dans le fichier serveur.c. Le client
 envoie l'opérateur et un (ou deux) numéros et le serveur envoie le
@@ -140,6 +142,7 @@ calcule : 68
 
 Testez votre code avec les numéros flottants et entiers.
 
+![](../images/client-server-calcul.svg)
 
 #### Exercice 5.6 [★★★]
 
@@ -170,6 +173,7 @@ Vous devrez modifier le serveur pour qu'il puisse lire et répondre aux messages
 
 Pour cet exercice, le serveur ne doit pas lire d'informations provenant des fichiers de l'élève. Le but du serveur est d'effectuer des calculs arithmétiques simples. Seul le client peut lire les fichiers relatifs aux notes des élèves et envoyer une série de messages au serveur pour obtenir la somme totale, la moyenne, etc. 
 
+
 #### Fichiers
 
 *client.c, client.h, Makefile, repertoire.c, repertoire.h, serveur.c,
@@ -179,7 +183,7 @@ serveur.h*
 
 -   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs,
     , les lignes importantes de code etc.). Les commentaires sont notés.
--   N'oubliez pas de mettre à jour le fichier README et ajouter les
+-   N'oubliez pas de mettre à jour le fichier README.md et ajouter les
     détails concernant votre deuxième exercice.
 -   Compte rendu en format .zip en un seul fichier.
 

@@ -144,6 +144,7 @@ Pour obtenir les dernières mises à jour du répertoire, vous pouvez exécuter 
 - Aucune soumission par courriel électronique.
 - Les liens vers des sites externes comme GitHub/GitLab,... ne seront pas acceptés. 
 - Seules les soumissions complètes sur E-Campus seront acceptées pour l'évaluation.
+- Ne pas modifier les noms de fichiers.
 
 # Author
 - John Samuel
