@@ -33,7 +33,7 @@ void plot(char *data)
   fprintf(p, "plot '-' with circles lc rgbcolor variable\n");
   while (1)
   {
-    char *token = strtok_r(str, ", ", &saveptr);
+    char *token = strtok_r(str, ",", &saveptr);
     if (token == NULL)
     {
       break;
@@ -68,7 +68,7 @@ int renvoie_message(int client_socket_fd, char *data)
     perror("erreur ecriture");
     return (EXIT_FAILURE);
   }
-  return (0);
+  return (EXIT_SUCCESS);
 }
 
 /* accepter la nouvelle connection d'un client et lire les données
@@ -122,7 +122,7 @@ int recois_envoie_message(int socketfd)
 
   // fermer le socket
   close(socketfd);
-  return (0);
+  return (EXIT_SUCCESS);
 }
 
 int main()

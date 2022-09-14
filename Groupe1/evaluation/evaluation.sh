@@ -44,8 +44,6 @@ echo "==========================================================================
 echo "                                       Evaluation                                               "
 echo "================================================================================================"
 
-declare -a TPs
-
 TP[0]="binaire.c;bonjour.c;boucles.c;cercle.c;conditions.c;opérateurs2.c;opérateurs.c;sizeof_types.c;variables.c"
 TP[1]="bits.c;chaine.c;couleurs.c;etudiant2.c;etudiant.c;fibonacci.c;ptrvariables.c;puissance.c;tableauptr.c"
 TP[2]="chercher.c;couleur_compteur.c;couleurs.c;grand_petit.c;octets.c;recherche_dichotomique.c;sizeof.c;tri.c"

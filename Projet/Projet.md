@@ -480,3 +480,7 @@ Enfin, écrivez des tests fonctionnels et unitaires pour vérifier si
     respecter le protocole de communication.
 -   plusieurs clients peuvent communiquer simultanément avec votre
     serveur.
+
+#### Fichiers
+*bmp.c  client.c  couleur.c  json.c  operations.c  serveur.c  testes.c  validation.c
+bmp.h  client.h  couleur.h  json.h  operations.h  serveur.h  testes.h  validation.h*
