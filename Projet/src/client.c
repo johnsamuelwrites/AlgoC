@@ -29,9 +29,9 @@ int envoie_recois_message(int socketfd)
   memset(data, 0, sizeof(data));
 
   // Demandez à l'utilisateur d'entrer un message
-  char message[100];
+  char message[1024];
   printf("Votre message (max 1000 caracteres): ");
-  fgets(message, 1024, stdin);
+  fgets(message, sizeof(message), stdin);
   strcpy(data, "message: ");
   strcat(data, message);
 
@@ -111,6 +111,12 @@ int main(int argc, char **argv)
   int socketfd;
 
   struct sockaddr_in server_addr;
+
+  if (argc < 2)
+  {
+    printf("usage: ./client chemin_bmp_image\n");
+    return (EXIT_FAILURE);
+  }
 
   /*
    * Creation d'une socket
