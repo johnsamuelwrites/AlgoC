@@ -46,15 +46,13 @@ echo "==========================================================================
 
 projectfilelist="bmp.h;client.h;couleur.h;json.h;operations.c;serveur.c;testes.c;validation.c;bmp.c;client.c;couleur.c;json.c;operations.h;serveur.h;testes.h;validation.h"
 
-
-echo $projectfilelist
 directory="Projet"
 echo "------------------------------------------------------------------------------------------------"
 echo "                                       Evaluating $directory                                     "
 echo "------------------------------------------------------------------------------------------------"
 cd "../../$directory"
 ls
-ls ./
+ls ./src/
 
 verify_if_not_empty_file "CONTRIBUTORS.md"
 value=$?
@@ -79,3 +77,5 @@ compile_files_in_directory $directory ${projectfilelist}
 echo "================================================================================================"
 echo "                                       Evaluation Finished                                      "
 echo "================================================================================================"
+
+unset projectfilelist TP i value directory
