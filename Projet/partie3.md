@@ -4,6 +4,9 @@ Pour cette tâche, notre objectif est de nous assurer que le transfert
 des messages entre le client et le serveur respecte le format JSON et le
 protocole de communication.
 
+Modifiez les fichiers *validation.h*, *validation.c* *json.h* et *json.c*.
+
+
 Références:
 
 1.  <http://json.org/json-fr.html>: Site officiel de JSON

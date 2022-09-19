@@ -16,6 +16,7 @@ calcul d'opérations avec plus de possibilités: moyenne, minimum,
 maximum, écart type.
 
 Le client et le serveur doivent envoyer des valeurs JSON valides.
+Modifiez les fichiers *operations.h*, *operations.c*, *validation.h*, *validation.c* *json.h* et *json.c*.
 
 **Exemple de requête envoyé par le client**
 ```

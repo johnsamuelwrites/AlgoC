@@ -4,6 +4,8 @@ Pour cette tâche, notre objectif est d\'utiliser le format d\'image bmp
 et de communiquer entre le serveur et le client à l\'aide du format de
 message JSON.
 
+Modifiez les fichiers *json.h* et *json.c*.
+
 Références:
 
 1.  BMP : <https://fr.wikipedia.org/wiki/Windows_bitmap>
@@ -11,10 +13,11 @@ Références:
 
 ### a. gnuplot
 
-Téléchargez les fichiers suivants à partir d'e-campus : client.c,
-client.h, serveur.c, serveur.h, couleur.h, couleur.c, bmp.c, bmp.h,
-Makefile.
+Téléchargez les fichiers suivants à partir d'e-campus : 
+bmp.h,, client.h, couleur.h, json.h, operations.c, serveur.c, testes.c, validation.c,
+bmp.c, client.c, couleur.c, json.c, Makefile, operations.h, serveur.h, testes.h, validation.h
 
+ 
 Téléchargez le dossier images. Les images proviennent de Wikimedia
 Commons et sont en format BMP.
 

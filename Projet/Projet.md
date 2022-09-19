@@ -162,6 +162,8 @@ Pour cette tâche, notre objectif est d\'utiliser le format d\'image bmp
 et de communiquer entre le serveur et le client à l\'aide du format de
 message JSON.
 
+Modifiez les fichiers *json.h* et *json.c*.
+
 Références:
 
 1.  BMP : <https://fr.wikipedia.org/wiki/Windows_bitmap>
@@ -169,10 +171,11 @@ Références:
 
 ### a. gnuplot
 
-Téléchargez les fichiers suivants à partir d'e-campus : client.c,
-client.h, serveur.c, serveur.h, couleur.h, couleur.c, bmp.c, bmp.h,
-Makefile.
+Téléchargez les fichiers suivants à partir d'e-campus : 
+bmp.h,, client.h, couleur.h, json.h, operations.c, serveur.c, testes.c, validation.c,
+bmp.c, client.c, couleur.c, json.c, Makefile, operations.h, serveur.h, testes.h, validation.h
 
+ 
 Téléchargez le dossier images. Les images proviennent de Wikimedia
 Commons et sont en format BMP.
 
@@ -211,7 +214,7 @@ Nous avons utilisé les messages très simples entre client et serveur
 par exemple
 
 ```
-              calcule: + 23 45              
+              calcule: + 23 45
               couleurs: 10, #0effeee,...
 ```
 
@@ -243,6 +246,9 @@ format de messages JSON. Par exemple,
 Pour cette tâche, notre objectif est de nous assurer que le transfert
 des messages entre le client et le serveur respecte le format JSON et le
 protocole de communication.
+
+Modifiez les fichiers *validation.h*, *validation.c* *json.h* et *json.c*.
+
 
 Références:
 
@@ -432,6 +438,7 @@ calcul d'opérations avec plus de possibilités: moyenne, minimum,
 maximum, écart type.
 
 Le client et le serveur doivent envoyer des valeurs JSON valides.
+Modifiez les fichiers *operations.h*, *operations.c*, *validation.h*, *validation.c* *json.h* et *json.c*.
 
 **Exemple de requête envoyé par le client**
 ```
@@ -483,4 +490,5 @@ Enfin, écrivez des tests fonctionnels et unitaires pour vérifier si
 
 #### Fichiers
 *bmp.c  client.c  couleur.c  json.c  operations.c  serveur.c  testes.c  validation.c
-bmp.h  client.h  couleur.h  json.h  operations.h  serveur.h  testes.h  validation.h*
+bmp.h  client.h  couleur.h  json.h  operations.h  serveur.h  testes.h  validation.h
+Makefile*
