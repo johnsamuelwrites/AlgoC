@@ -5,6 +5,11 @@
  *
  */
 
+/*
+ * Le code côté serveur. L'objectif principal est de recevoir des messages des clients,
+ * de traiter ces messages et de répondre aux clients.
+ */
+
 #ifndef __SERVER_H__
 #define __SERVER_H__
 

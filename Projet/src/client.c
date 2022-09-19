@@ -5,6 +5,11 @@
  *
  */
 
+/* 
+ * Code du côté client. Le but principal de ce code est de communiquer avec le serveur, 
+ * d'envoyer et de recevoir des messages. Ces messages peuvent être du simple texte ou des chiffres.
+ */
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>

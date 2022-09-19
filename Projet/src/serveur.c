@@ -5,6 +5,11 @@
  *
  */
 
+/*
+ * Le code côté serveur. L'objectif principal est de recevoir des messages des clients,
+ * de traiter ces messages et de répondre aux clients.
+ */
+
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/epoll.h>

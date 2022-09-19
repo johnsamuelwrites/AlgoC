@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
+/*
+ * Code permettant de stocker différents types de couleurs : format 24 bits (RGB) ou format 32 bits (32). 
+ */
 
 #define _GNU_SOURCE // to avoid c99 related warnings
 #include "couleur.h"

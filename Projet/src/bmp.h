@@ -5,6 +5,11 @@
  *
  */
 
+/*
+ * Code pour analyser les images du format BMP. L'objectif principal est d'obtenir les couleurs 
+ * distinctes et leur nombre d'occurrences dans une image.
+ */
+
 #ifndef __READ_BMP_H__
 #define __READ_BMP_H__
 
