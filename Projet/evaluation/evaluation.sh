@@ -41,7 +41,7 @@ compile_files_in_directory (){
 }
 
 echo "================================================================================================"
-echo "                                       Evaluation                                               "
+echo "                                       Project Evaluation                                               "
 echo "================================================================================================"
 
 projectfilelist="bmp.h;client.h;couleur.h;json.h;operations.c;serveur.c;testes.c;validation.c;bmp.c;client.c;couleur.c;json.c;operations.h;serveur.h;testes.h;validation.h"
@@ -75,7 +75,7 @@ fi
 compile_files_in_directory $directory ${projectfilelist}
   cd "./evaluation"
 echo "================================================================================================"
-echo "                                       Evaluation Finished                                      "
+echo "                                       Project Evaluation Finished                                      "
 echo "================================================================================================"
 
 unset projectfilelist TP i value directory
