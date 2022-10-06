@@ -81,7 +81,7 @@ int factorielle (int num) {
     return 1;
   }
   else {
-    return (num \* factorielle (num-1));
+    return (num * factorielle (num-1));
   }
 }
 ```
@@ -125,8 +125,8 @@ struct liste_couleurs {
    // Remplissez ça pour gérer une liste (simplement chainée) de couleurs.
 }                
 
-void insertion (struct couleur \*, struct liste\_couleurs \*);                
-void parcours (struct liste\_couleurs \*);
+void insertion (struct couleur *, struct liste_couleurs *);                
+void parcours (struct liste_couleurs *);
 ```
 
 Implémentez ces fonctions en liste.c. insertion prends deux entrées:
