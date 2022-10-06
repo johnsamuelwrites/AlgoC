@@ -36,6 +36,8 @@ L'objectif des travaux pratiques est de créer un projet pour comprendre
 les différents aspects de programmation en C. Suite à l'accomplissement
 de tous les exercices, vous serez captable de
 
+-   Utilisation des structures de données: liste, pile, file, graphe
+-   Utilisation des algorithmes de recherche, tri et indexation  
 -   Comprendre la chaine de compilation en utilisant GCC (GNU
     compilation chain) : du prétraitement jusqu'à l'exécution
 -   Travailler avec les bibliothèques standards et les appels de système
