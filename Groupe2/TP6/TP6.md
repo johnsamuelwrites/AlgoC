@@ -100,6 +100,8 @@ pour travailler avec le format de messages JSON. Par exemple,
 }             
 ```
 
+**Structure de données**: par exemple, liste (simplement chainée), pile, file
+
 ### Fichiers
 
 bmp.c, bmp.h, client.c, client.h, couleur.c, couleur.h, Makefile,

@@ -30,8 +30,8 @@ num2, op.
 ### Exercice 4.2 [★]
 
  
-Écrivez un programme en créant deux fichiers *fichier.c* et fichier.h.
-Dans fichier.h, déclarez les fonctions lire_fichier(char
+Écrivez un programme en créant deux fichiers *fichier.c* et *fichier.h*.
+Dans *fichier.h*, déclarez les fonctions lire_fichier(char
 \*nom_de_fichier) et ecrire_dans_fichier(char \*nom_de_fichier,
 char \*message). La fonction lire_fichier prend le nom du fichier et
 affiche son contenu à l'écran. ecrire_dans_fichier prend le nom du
@@ -60,7 +60,7 @@ Dupont, Pierre, Boulevard du 11 novembre 1918, Villeurbanne, 20, 30             
 En réutilisant le code de l'*operator.c* (voir ci-dessus), créer une
 commande calcule (fichier: *calcule.c*) qui utilise l'interface en
 ligne de commande. Il y a trois options pour cette commande: opérateur
-(+, -, *, /, %, &, |, ~), numéro un et numéro deux. Par exemple, si
+(+, -, \*, /, %, &, |, ~), numéro un et numéro deux. Par exemple, si
 l'utilisateur écrit
 
 ```              $ calcule ‘*’ 23 40             ```
@@ -110,6 +110,7 @@ Ligne 10, 2 fois
 Ligne 30, 1 fois             
 ```
 
+**Algorithmes**: par exemple, algorithme de Knuth-Morris-Pratt
 
 ### Exercice 4.7 [★★★]
 
@@ -137,6 +138,7 @@ en utilisant insertion(..) et parcourez votre liste en utilisant
 parcours(..). 
 Testez ces fonctions en utilisant le fichier principal (*main.c*).
 
+**Structure de données**: liste (simplement chainée)
 
 ### Fichiers
 

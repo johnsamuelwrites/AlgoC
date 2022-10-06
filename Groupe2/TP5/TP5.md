@@ -45,6 +45,8 @@ $ ls -R
 sur la ligne de commande. Testez votre code. Utilisez le principe de la
 fonction récursive.
 
+**Structure de données**: par exemple, liste, pile, file, graphes
+**Algorithmes**: parcours de graphe
 
 ### Exercice 5.3 [★★]
 
@@ -61,6 +63,8 @@ des fichiers, des répertoires, des sous-répertoires et des fichiers
 dans les sous-répertoires. Mais cette fois, utilisez for (ou while ou
 do..while) pour implémenter cette fonction. Testez votre code.
 
+**Structure de données**: par exemple, liste, pile, file, graphes
+**Algorithmes**: parcours de graphe
 
 ### Exercice 5.4 [★★]
 
@@ -172,6 +176,7 @@ Vous devrez modifier le serveur pour qu'il puisse lire et répondre aux messages
 
 Pour cet exercice, le serveur ne doit pas lire d'informations provenant des fichiers de l'élève. Le but du serveur est d'effectuer des calculs arithmétiques simples. Seul le client peut lire les fichiers relatifs aux notes des élèves et envoyer une série de messages au serveur pour obtenir la somme totale, la moyenne, etc. 
 
+**Structure de données**: par exemple, liste (simplement chainée), pile, file
 
 ### Fichiers
 

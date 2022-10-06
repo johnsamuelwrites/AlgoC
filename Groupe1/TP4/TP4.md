@@ -63,7 +63,7 @@ ligne de commande. Il y a trois options pour cette commande: opérateur
 (+, -, \*, /, %, &, |, ~), numéro un et numéro deux. Par exemple, si
 l'utilisateur écrit
 
-```              $ calcule ‘+’ 23 40             ```
+```              $ calcule ‘*’ 23 40             ```
 
 Vous devez afficher le produit de ces deux numéros. Testez votre code.
 
@@ -136,9 +136,9 @@ d'une liste de couleurs et affiche les couleurs dans la liste. Créez
 une liste de 10 couleurs et testez votre code en ajoutant dix couleurs
 en utilisant insertion(..) et parcourez votre liste en utilisant
 parcours(..). 
-Testez ces fonctions en utilisant le fichier principal ( *main.c* ).
+Testez ces fonctions en utilisant le fichier principal (*main.c*).
 
-**Structure de données**: liste
+**Structure de données**: liste (simplement chainée)
 
 ### Fichiers
 
