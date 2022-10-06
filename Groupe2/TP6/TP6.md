@@ -1,9 +1,8 @@
-Année: 2022-2023
-----------------
+# Année: 2022-2023
 
-### Travaux pratiques 6
+## Travaux pratiques 6
 
-#### Objectifs
+### Objectifs
 
 -   Compréhension et modification du code, manipulation des images, et
     exécution des applications existantes sur la machine (Par exemple,
@@ -18,7 +17,7 @@ Référence : <https://fr.wikipedia.org/wiki/Windows_bitmap>
 
 Référence : <https://fr.wikipedia.org/wiki/JavaScript_Object_Notation>
 
-#### Exercice 6.1 [★]
+### Exercice 6.1 [★]
 
 
 Téléchargez les fichiers suivants à partir d'e-campus : client.c,
@@ -56,7 +55,7 @@ gnuplot en utilisant popen. N'oubliez pas fermer gnuplot après chaque
 utilisation.
 
 
-#### Exercice 6.2 [★★]
+### Exercice 6.2 [★★]
 
 
 Les deux fichiers serveur.c et client.c sont initialement écris pour
@@ -64,7 +63,7 @@ travailler avec dix premières couleurs. Modifiez les deux fichiers de
 manière à ce que ce nombre de couleurs (toujours \<=30) soit saisi par
 l'utilisateur. Testez votre code. N'oubliez pas d'utiliser make.
 
-#### Exercice 6.3 [★★★]
+### Exercice 6.3 [★★★]
 
 
 Vous avez remarqué que nous avons utilisé les messages très simples
@@ -101,12 +100,12 @@ pour travailler avec le format de messages JSON. Par exemple,
 }             
 ```
 
-#### Fichiers
+### Fichiers
 
 bmp.c, bmp.h, client.c, client.h, couleur.c, couleur.h, Makefile,
 serveur.c, serveur.h
 
-#### Instructions
+### Instructions
 
 -   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs,
     , les lignes importantes de code etc.). Les commentaires sont notés.

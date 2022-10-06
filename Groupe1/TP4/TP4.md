@@ -1,9 +1,8 @@
-Année: 2022-2023
-----------------
+# Année: 2022-2023
 
-### Travaux pratiques 4
+## Travaux pratiques 4
 
-#### Objectifs
+### Objectifs
 
 -   Comprendre les fonctions, les fonctions récursives, la manipulation
     du répertoire et les listes.
@@ -12,7 +11,7 @@ Année: 2022-2023
 
 Jusqu'à présent, nous avons utilisé printf pour trouver la source des erreurs. Avant de continuer les TPs, veuillez vérifier [cet exercice](../../gdb/README.md) simple pour comprendre comment déboguer le code en utilisant gdb.
 
-#### Exercice 4.1 [★]
+### Exercice 4.1 [★]
 
  
 En réutilisant le code de l'*operators2.c* (TP2), écrivez un programme
@@ -28,7 +27,7 @@ cette fois, si op est égal à '+', le programme doit appeler la fonction
 num2, op.
 
 
-#### Exercice 4.2 [★]
+### Exercice 4.2 [★]
 
  
 Écrivez un programme en créant deux fichiers *fichier.c* et *fichier.h*.
@@ -40,7 +39,7 @@ fichier et écrire le message saisi par l'utilisateur dans le fichier.
 Testez ces fonctions en utilisant le fichier principal (*main.c*).
 
 
-#### Exercice 4.3 [★★]
+### Exercice 4.3 [★★]
 
  
 En réutilisant le code de l'*etudiant2.c* (TP2) et *fichier.c*, écrivez
@@ -55,7 +54,7 @@ Dupont, Pierre, Boulevard du 11 novembre 1918, Villeurbanne, 20, 30             
 ```
 
 
-#### Exercice 4.4 [★★]
+### Exercice 4.4 [★★]
 
  
 En réutilisant le code de l'*operator.c* (voir ci-dessus), créer une
@@ -69,7 +68,7 @@ l'utilisateur écrit
 Vous devez afficher le produit de ces deux numéros. Testez votre code.
 
 
-#### Exercice 4.5 [★★]
+### Exercice 4.5 [★★]
 
  
 Une fonction récursive est une fonction qui s'appelle elle-même. Par
@@ -91,7 +90,7 @@ int factorielle (int num) {
 différents entiers naturels.
 
 
-#### Exercice 4.6 [★★★]
+### Exercice 4.6 [★★★]
 
  
 En réutilisant le code de *chercher.c* (TP3) et *fichier.c*, écrivez un
@@ -113,7 +112,7 @@ Ligne 30, 1 fois
 
 **Algorithmes**: par exemple, algorithme de Knuth-Morris-Pratt
 
-#### Exercice 4.7 [★★★]
+### Exercice 4.7 [★★★]
 
  
 En réutilisant le fichier couleurs.c (TP 2), écrivez un programme en
@@ -141,12 +140,12 @@ Testez ces fonctions en utilisant le fichier principal ( *main.c* ).
 
 **Structure de données**: liste
 
-#### Fichiers
+### Fichiers
 
 *calcule.c, etudiant_bd.c, fichier.c, liste.c, operator.c,
 chercherfichier.c, factorielle.c, fichier.h, liste.h, operator.h*
 
-#### Instructions
+### Instructions
 
 -   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs,
     , les lignes importantes de code etc.). Les commentaires sont notés.

@@ -1,16 +1,15 @@
-Année: 2022-2023
-----------------
+# Année: 2022-2023
 
-### Travaux pratiques 1
+## Travaux pratiques 1
 
-#### Objectifs
+### Objectifs
 
 -   Ecrire, compiler et exécuter les programmes C.
 -   Utiliser des variables
 -   Utiliser différents types de base.
 -   Utiliser des opérateurs arithmétiques, logiques et de manipulation de bits. 
 
-#### Exercice 1.1 [★]
+### Exercice 1.1 [★]
 
  
 Créez un fichier *bonjour.c* et écrivez un programme qui affiche
@@ -37,7 +36,7 @@ $ gcc -Wall -Wextra -o bonjour bonjour.c
 $ ./bonjour
 ```
 
-#### Exercice 1.2 [★]
+### Exercice 1.2 [★]
 
  
 Écrivez un programme *cercle.c* qui calcule l'aire et le périmètre d'un
@@ -53,7 +52,7 @@ Compilez *cercle.c* et créez un fichier éxecutable nommé cercle.
 Exécutez 'cercle'.
 
 
-#### Exercice 1.3 [★]
+### Exercice 1.3 [★]
 
  
 Écrivez un programme *sizeof_types.c* qui affiche la taille des
@@ -80,7 +79,7 @@ N'oubliez pas d'utiliser les versions signées (`signed`) et non-signées (`unsi
 programme (compilez et exécutez).
 
 
-#### Exercice 1.4 [★★]
+### Exercice 1.4 [★★]
 
  
 Écrivez un programme *variables.c* qui affecte et affiche les valeurs
@@ -107,7 +106,7 @@ N'oubliez pas d'utiliser les versions signées (`signed`) et non-signées (`unsi
 le programme.
 
 
-#### Exercice 1.5 [★★]
+### Exercice 1.5 [★★]
 
  
 Écrivez un programme *opérateurs.c* qui utilise deux variables
@@ -120,7 +119,7 @@ ii. `b` = 3
 et testez les différents opérateurs arithmétiques et logiques.
 
 
-#### Exercice 1.6 [★★]
+### Exercice 1.6 [★★]
 
  
 Écrivez un programme *boucles.c* qui utilise `for`, # et * et qui
@@ -141,7 +140,7 @@ nouvelle version du code en utilisant `while` ou `do..while`.
 Vous pouvez utiliser des branchements conditionnels ( `if`) et inconditionnels (`break`
 ou `continue`).
 
-#### Exercice 1.7 [★★]
+### Exercice 1.7 [★★]
 
  
 Écrivez un programme *conditions.c* qui utilise les boucles (`for`,
@@ -156,7 +155,7 @@ c.  7 ou 5, mais pas par 3
 
 
 
-#### Exercice 1.8 [★★]
+### Exercice 1.8 [★★]
 
  
 Écrivez un programme *opérateurs2.c* qui utilise trois variables
@@ -174,7 +173,7 @@ pas utiliser chaine de caractères comme condition en `switch`. Testez
 votre programme avec différents valeurs de `num1`, `num2`, `op`. 
 
 
-#### Exercice 1.9 [★★★]
+### Exercice 1.9 [★★★]
 
  
 Écrivez un programme *binaire.c* qui utilise `for` pour l'affichage
@@ -185,28 +184,28 @@ l'affichage en notation binaire. Testez votre code avec les 5 numéros
 suivants : 0, 4096, 65536, 65535, 1024
 
 
-#### Astuce
+### Astuce
 
 -   Utilisez les boucles dans une boucle et `if` (Exercice 1.6)
 -   Pour l'exercice 1.9, pensez à utiliser les opérateurs pour la
     manipulation de bits (&, | ou ~)
 
-#### Fichiers
+### Fichiers
 
 *binaire.c, bonjour.c, boucles.c, cercle.c, conditions.c, opérateurs2.c,
 opérateurs.c, sizeof_types.c, variables.c*
 
-#### Instructions
+### Instructions
 
 -   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs
     etc.)
 -   Créez un fichier README.md et ajoutez les détails concernant votre premier
     exercice.
 
-#### Exemple
+### Exemple
 
  
-##### CONTRIBUTORS.md
+#### CONTRIBUTORS.md
 
 ```             
  1. NOM Prénom
@@ -214,7 +213,7 @@ opérateurs.c, sizeof_types.c, variables.c*
 ```             
 
 
-##### README.md
+#### README.md
 
 ```             
 # Bibliothèques:               

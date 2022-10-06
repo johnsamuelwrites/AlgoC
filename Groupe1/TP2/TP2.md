@@ -1,9 +1,8 @@
-Année: 2022-2023
-----------------
+# Année: 2022-2023
 
-### Travaux pratiques 2
+## Travaux pratiques 2
 
-#### Objectifs
+### Objectifs
 
 -   Comprendre les opérateurs, les tableaux, les pointeurs et les
     structures.
@@ -13,7 +12,7 @@ Année: 2022-2023
 -   Créer, lire et manipuler des tableaux
 -   Lire et manipuler des variables en utilisant des pointeurs
 
-#### Exercice 2.1 [★]
+### Exercice 2.1 [★]
 
 
 Écrivez le code *puissance.c* qui prend deux entiers **a** et **b** et
@@ -22,7 +21,7 @@ exemple, puissance(2,3) affiche la valeur 8. N'utilisez pas la fonction
 *pow()* (math.h).
 
 
-#### Exercice 2.2 [★]
+### Exercice 2.2 [★]
 
 
 Considérez un entier d (**int d ;**). Écrivez le code *bits.c* qui
@@ -30,7 +29,7 @@ vérifie si les 4eme et 20eme bits de **gauche** sont 1 (en binaire). Si
 les deux bits sont 1, il affiche 1 sinon 0.
 
 
-#### Exercice 2.3 [★]
+### Exercice 2.3 [★]
 
 
 La suite de Fibonacci est une suite d'entiers définie comme suit :
@@ -43,7 +42,7 @@ La suite de Fibonacci est une suite d'entiers définie comme suit :
 Fibonacci U0, U1, U2,...Un.
 
 
-#### Exercice 2.4 [★★]
+### Exercice 2.4 [★★]
 
 
 Sans utiliser les bibliothèques standards ou externes (par exemple
@@ -54,7 +53,7 @@ string.h), écrivez le code *chaine.c* qui
 3.  concatène deux chaines de caractères
 
 
-#### Exercice 2.5 [★★]
+### Exercice 2.5 [★★]
 
 
 Imaginez que vous gérez les notes de cinq étudiant.e.es. En utilisant
@@ -64,7 +63,7 @@ initialise et affiche les détails des cinq étudiant.e.es. Pour chaque
 ses notes dans 2 modules (Programmation en C, Système d'exploitation).
 
 
-#### Exercice 2.6 [★★] 
+### Exercice 2.6 [★★] 
 
 Écrivez un programme *etudiant2.c* pour la gestion de données
 étudiant.e.es (5 étudiant.e.es) en utilisant struct. Les détails pour
@@ -73,7 +72,7 @@ chaque étudiant.e restent les mêmes comme pour l'exercice précédente
 noms, prénoms etc.
 
 
-#### Exercice 2.7 [★★]
+### Exercice 2.7 [★★]
 
 
 Une couleur en format RGBA contient 4 valeurs : rouge (R), vert (G),
@@ -85,7 +84,7 @@ tableau de 10 couleurs. Pensez à initialiser les coleurs en notation
 hexadécimale (r : 0xef, g : 0x78 etc.).
 
 
-#### Exercice 2.8 [★★]
+### Exercice 2.8 [★★]
 
 
 Réutilisez le programme *variables.c* et créez un programme
@@ -112,7 +111,7 @@ Pour plus d'informations sur la manière dont les nombres réels sont stockés d
 
 
 
-#### Exercice 2.9 [★★★]
+### Exercice 2.9 [★★★]
 
 
 Créez un programme *tableauptr.c* et écrivez le code pour créer deux
@@ -123,17 +122,17 @@ pour parcourir les tableaux (par exemple, i [3], i [5] etc.).
 Utilisez les pointeurs.
 
 
-#### Astuce
+### Astuce
 
 -   Pour l'exercice 2.5, pensez à utiliser \*(s+i) etc (e.g, si s est
     un pointeur de type int \*).
 
-#### Fichiers
+### Fichiers
 
 *bits.c, chaine.c, couleurs.c, etudiant2.c, etudiant.c, fibonacci.c,
 ptrvariables.c, puissance.c, tableauptr.c*
 
-#### Instructions
+### Instructions
 
 -   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs,
     , les lignes importantes de code etc.). Les commentaires sont notés.

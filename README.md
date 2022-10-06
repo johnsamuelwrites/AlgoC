@@ -82,6 +82,7 @@ de tous les exercices, vous serez captable de
     -   ★: Facile
     -   ★★: Difficulté moyenne
     -   ★★★: Difficile
+6.   Utilisation des structures de données et algorithmes
 
 #### Rendus
 
