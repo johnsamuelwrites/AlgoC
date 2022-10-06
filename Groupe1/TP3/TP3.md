@@ -7,6 +7,7 @@ Année: 2022-2023
 
 -   Comprendre les les pointeurs et les structures.
 -   Comprendre l'espace occupé par les différentes variables en mémoire en utilisant `sizeof`
+-   Utilisation des algorithmes de recherche et tri
 
 #### Exercice 3.1 [★]
 
@@ -17,14 +18,14 @@ testez le code suivant. Quelle est la valeur renvoyée par chacune des
 lignes suivantes ?
 
 1.  sizeof (int)
-2.  sizeof (int *)
-3.  sizeof (int **)
-4.  sizeof (char *)
-5.  sizeof (char **)
-6.  sizeof (char ***)
-7.  sizeof (float *)
-8.  sizeof (float **)
-9.  sizeof (float ***)
+2.  sizeof (int \*)
+3.  sizeof (int \*\*)
+4.  sizeof (char \*)
+5.  sizeof (char \*\*)
+6.  sizeof (char \*\*\*)
+7.  sizeof (float \*)
+8.  sizeof (float \*\*)
+9.  sizeof (float \*\*\*)
 
 
 #### Exercice 3.2 [★]
@@ -45,6 +46,7 @@ N'utilisez pas scanf.
 Écrivez un programme *tri.c* en créant d'abord un tableau de 100
 entiers, puis en les triant par ordre croissant.
 
+**Algorithmes**: par exemple, tri à bulles, tri rapide
 
 #### Exercice 3.4 [★★]
 
@@ -53,6 +55,7 @@ entiers, puis en les triant par ordre croissant.
 puis en cherchant un entier dans ce tableau. Si l'entier est présent
 dans le tableau, affichez le message 'entier présent'.
 
+**Algorithmes**: par exemple, recherche séquentielle 
 
 #### Exercice 3.5 [★★]
 
@@ -64,6 +67,7 @@ entiers et puis en cherchant un entier dans le tableau déjà tri en ordre
 croissant. Si l'entier est présent dans le tableau, affichez le message
 'entier présent'.
 
+**Algorithmes**: par exemple, recherche dichotomique
 
 #### Exercice 3.6 [★★]
 
@@ -102,6 +106,8 @@ Vous devez afficher
 
 Vous pouvez créer une nouvelle structure pour stocker les couleurs distinctes et leur compte. 
 
+**Algorithmes**: par exemple, tri à bulles, tri rapide
+
 #### Exercice 3.8 [★★★]
 
 
@@ -110,6 +116,7 @@ tableau de tableau de caractères). Sans utilisant les fonctions de
 bibliothèques standards ou externes, cherchez si une phrase est dans le
 tableau ou pas. 
 
+**Algorithmes**: par exemple, fonction de hachage
 
 #### Fichiers
 
