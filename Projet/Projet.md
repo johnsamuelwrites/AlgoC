@@ -43,6 +43,8 @@ Il y a cinq tâches dans ce projet.
 - Logiciels: gnuplot
   - Installation: sudo apt install gnuplot gnuplot-x11
 
+**Algorithmes et structure de données**: par exemple, liste, pile, file, graphes
+
 ## Tâche 1.
 
 Dans notre première tâche, votre mission consiste à envoyer différents types de messages.
