@@ -110,7 +110,7 @@ Vous pouvez créer une nouvelle structure pour stocker les couleurs distinctes e
 ### Exercice 3.8 [★★★]
 
 
-Modifier le fichier *chercher.c* (le même fichier que celui de l'exercice 3.4) et ajouter un tableau de 10 phrases (un
+Modifiez le fichier *chercher.c* (le même fichier que celui de l'exercice 3.4) et ajoutez un tableau de 10 phrases (un
 tableau de tableau de caractères). Sans utilisant les fonctions de
 bibliothèques standards ou externes, cherchez si une phrase est dans le
 tableau ou pas. 
