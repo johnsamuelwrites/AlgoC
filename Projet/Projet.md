@@ -154,7 +154,7 @@ ces balises et les enregistre dans un fichier.
 par exemple, si le client veut envoyer 10 balises, il enverra le
 message suivant
 
-`              couleurs: 10, #nature, #arbre,...             `
+`              balises: 10, #nature, #arbre,...             `
 
 ![](./images/client-server-balises.svg)
 
