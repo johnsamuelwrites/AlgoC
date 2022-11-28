@@ -23,6 +23,8 @@ Par exemple, les messages suivantes sont valides. Vous voyez que nous
 n\'utilisons pas de guillemets pour les nombres, mais nous utilisons des
 guillemets pour les chaînes de caractères.
 
+Remarquez que pour les opérations "calcule"/"balises", nous avons maintenant ajouté le nombre de couleurs/tags dans la liste "valeurs". 
+
 ```
               {
                 "code" : "message",
@@ -38,7 +40,7 @@ guillemets pour les chaînes de caractères.
               }
               {
                 "code" : "balises",
-                "valeurs" : [ "#nature", "#arbre", ...]
+                "valeurs" : [ 10, "#nature", "#arbre", ...]
               }
 ```
 
