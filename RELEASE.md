@@ -1,3 +1,18 @@
+# v1.4
+===============================================================================
+- Add support for basic evaluation for all groups
+- Link empty files to project description
+- Describe the goals of different files
+- Add exercise on debugging using gdb
+- Add example algorithms and data structures as well as some propositions
+- Indent code
+- Update instructions of practical exercises
+- Rename files (use of .md)
+- Correct link to images
+- Update exercises (TP3)
+- Correct errors
+- Update comments in the code
+
 # v1.3
 ===============================================================================
 - Suppport Jekyll Theme
