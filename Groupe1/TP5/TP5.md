@@ -1,194 +1,229 @@
-# Année: 2022-2023
+Année: 2023-2024
+----------------
 
-## Travaux pratiques 5
+### Travaux pratiques 5
 
-### Objectifs
+## Objectifs
 
--   Comprendre la programmation client-serveur.
+- Comprendre la manipulation des fichiers et répertoires.
+- Comprendre la programmation client-serveur.
 
-### Exercice 5.1 [★]
-
-
-Écrivez un programme en créant deux fichiers *repertoire.h* et
-*repertoire.c* qui utilisent l'interface en ligne de commande et prennent
-le nom du répertoire.
-
-Ajoutez la déclaration suivante en repertoire.h
-```
-void lire_dossier(char *);             
-```
-
-Implémentez cette fonction en *repertoire.c* qui parcourt le répertoire
-saisi par l'utilisateur et affiche les noms des fichiers (et
-répertoires, si aucun) dans ce répertoire. Vous pouvez utiliser `opendir`,
-`readdir` pour parcourir un répertoire.
+## Exercice 5.1 [★]
 
 
-### Exercice 5.2 [★]
+**Liste de fichiers et répertoires dans un dossier**
 
 
-Ajoutez la déclaration suivante en *repertoire.h*
+Le programme `repertoire.c` et `repertoire.h` prend en entrée le nom d'un répertoire via l'interface en ligne de commande et affiche la liste des fichiers (et répertoires, le cas échéant) présents dans ce répertoire. Pour ce faire, il utilise les fonctions `opendir` et `readdir` pour parcourir le répertoire et afficher les noms des fichiers et répertoires.
 
-```
-void lire_dossier_recursif(char *);             
-```
+**Instructions**
+- Créez un fichier `repertoire.h` avec la déclaration de la fonction `lire_dossier`.
+- Implémentez la fonction `lire_dossier` dans le fichier `repertoire.c`. Cette fonction prend en entrée le nom du répertoire saisi par l'utilisateur.
+- Utilisez les fonctions `opendir` et `readdir` pour parcourir le répertoire spécifié.
+- Affichez les noms des fichiers et répertoires présents dans le répertoire.
 
-Implémentez la fonction en *repertoire.c* qui parcourt le répertoire saisi
-par l'utilisateur en récursif et affiche tous les noms des
-fichiers, des répertoires, des sous-répertoires et des fichiers dans les
-sous-répertoires. Pour mieux comprendre cette question, testez
+Exemple d'utilisation:
+```c
+#include "repertoire.h"
+#include <stdio.h>
 
-```
-$ ls -R              
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Utilisation : %s <nom_du_repertoire>\n", argv[0]);
+        return 1;
+    }
+
+    char *nom_repertoire = argv[1];
+    lire_dossier(nom_repertoire);
+
+    return 0;
+}
 ```
 
-sur la ligne de commande. Testez votre code. Utilisez le principe de la
-fonction récursive.
+Assurez-vous que le programme fonctionne correctement en saisissant le nom d'un répertoire lors de l'exécution et en affichant la liste des fichiers et répertoires dans ce répertoire. Utilisez la fonction `opendir` et `readdir` pour parcourir le répertoire.
 
-**Structure de données**: par exemple, liste, pile, file, graphes
-**Algorithmes**: parcours de graphe
-
-### Exercice 5.3 [★★]
+## Exercice 5.2 [★]
 
 
-Ajoutez la déclaration suivante en repertoire.h
+**Liste récursive de fichiers et répertoires dans un dossier**
 
-```
-void lire_dossier_iteratif(char *);              
-```
 
-Implémentez cette fonction en repertoire.c qui parcourt le répertoire
-saisi par l'utilisateur en mode itératif et affiche tous les noms de
-des fichiers, des répertoires, des sous-répertoires et des fichiers
-dans les sous-répertoires. Mais cette fois, utilisez for (ou while ou
-do..while) pour implémenter cette fonction. Testez votre code.
+Le programme `repertoire.c` et `repertoire.h` prend en entrée le nom d'un répertoire via l'interface en ligne de commande et affiche récursivement la liste des fichiers, répertoires et sous-répertoires présents dans ce répertoire et ses sous-répertoires. Il utilise une fonction récursive pour parcourir tous les niveaux du répertoire.
 
-**Structure de données**: par exemple, liste, pile, file, graphes
-**Algorithmes**: parcours de graphe
+**Instructions**
+- Ajoutez la déclaration de la fonction `lire_dossier_recursif` dans le fichier `repertoire.h`.
+- Implémentez la fonction `lire_dossier_recursif` dans le fichier `repertoire.c`. Cette fonction prend en entrée le nom du répertoire saisi par l'utilisateur.
+- Utilisez une fonction récursive pour parcourir le répertoire et ses sous-répertoires.
+- À chaque niveau de récursion, utilisez les fonctions `opendir` et `readdir` pour parcourir le répertoire en cours.
+- Affichez les noms des fichiers, répertoires et sous-répertoires présents dans le répertoire en cours.
+- Assurez-vous de gérer correctement la terminaison de la récursion lorsque vous atteignez la fin des sous-répertoires.
 
-### Exercice 5.4 [★★]
+Exemple d'utilisation:
+```c
+#include "repertoire.h"
+#include <stdio.h>
 
-#### Client-Serveur
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Utilisation : %s <nom_du_repertoire>\n", argv[0]);
+        return 1;
+    }
 
-Un environnement client-serveur permet un mode de communication sur un
-réseau entre les programmes. Un de ces programmes est appelé serveur qui
-répond aux requêtes d'autres programmes appelés clients. Par exemple,
+    char *nom_repertoire = argv[1];
+    lire_dossier_recursif(nom_repertoire);
 
-1.  Un client envoie un message au serveur et le serveur reçoit le
-    message et le renvoie.
-2.  Un client envoie l'opérateur et un/deux numéros et le serveur fait
-    le calcul et envoie le résultat.
-
-Référence : <https://fr.wikipedia.org/wiki/Client-serveur>
-
-![](../../Projet/images/client-server.svg)
-
-Pour simuler un environnement client-serveur, on va utiliser une seule
-machine en lançant deux terminaux. Sur un des deux terminaux exécutez le
-code du serveur. Sur l'autre, exécutez le code du client.
-
-Téléchargez les fichiers suivants à partir d'e-campus : *client.h*,
-*client.c*, *serveur.h*, *serveur.c*, *Makefile*. Lisez bien tous les fichiers.
-Exécutez
-
-```
-$ make             
+    return 0;
+}
 ```
 
-et voyez les fichiers exécutables qui sont créés.
+Exécutez le programme en saisissant le nom d'un répertoire lors de l'exécution, et il affichera récursivement la liste des fichiers, répertoires et sous-répertoires présents dans ce répertoire et ses sous-répertoires. Utilisez le principe de la fonction récursive pour parcourir tous les niveaux du répertoire.
 
-Ouvrez deux terminaux. Sur le premier terminal, exécutez
+## Exercice 5.3 [★★]
 
-```
-./serveur             
-```
-
-et sur le second terminal
-
-```
-./client             
-```
-
-Entrez un message et voyez les affichages sur les deux terminaux.
-
-Modifiez la fonction `recois_envoie_message` (*serveur.c*). Quand le
-serveur reçoit un message, il demande à l'utilisateur de saisir un
-message et envoie ce message au client. Testez votre code. N'oubliez pas
-d'utiliser make (pour la compilation et la génération des fichiers
-exécutables).
-
-![](../../Projet/images/client-server-message.svg)
-
-### Exercice 5.5 [★★★]
+**Liste itérative de fichiers et répertoires dans un dossier**
 
 
-Vous avez remarqué les premiers caractères dans chaque message :
-'message' suivi par :. Pour votre prochaine question, on utilisera
-calcule. 
+Le programme `repertoire.c` et `repertoire.h` prend en entrée le nom d'un répertoire via l'interface en ligne de commande et affiche de manière itérative la liste des fichiers, répertoires et sous-répertoires présents dans ce répertoire et ses sous-répertoires. Cette version utilise une approche itérative (boucle `for` ou `while`) pour parcourir les niveaux du répertoire.
 
-Modifiez les fichiers client.c et serveur.c pour le support des
-calculs simples (+,-,\*,...). Ajoutez une fonction
-`envoie_operateur_numeros(...)` dans le fichier client.c et
-`recois_numeros_calcule(...)` dans le fichier serveur.c. Le client
-envoie l'opérateur et un (ou deux) numéros et le serveur envoie le
-résultat. Par exemple, si le client envoie le message
+**Instructions**
+- Ajoutez la déclaration de la fonction `lire_dossier_iteratif` dans le fichier `repertoire.h`.
+- Implémentez la fonction `lire_dossier_iteratif` dans le fichier `repertoire.c`. Cette fonction prend en entrée le nom du répertoire saisi par l'utilisateur.
+- Utilisez une approche itérative (boucle `for` ou `while`) pour parcourir le répertoire et ses sous-répertoires.
+- À chaque itération de la boucle, utilisez les fonctions `opendir` et `readdir` pour parcourir le répertoire en cours.
+- Affichez les noms des fichiers, répertoires et sous-répertoires présents dans le répertoire en cours.
+- Assurez-vous que la boucle parcourt tous les niveaux du répertoire de manière itérative.
 
-```
-calcule : + 23 45             
+Exemple d'utilisation:
+```c
+#include "repertoire.h"
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Utilisation : %s <nom_du_repertoire>\n", argv[0]);
+        return 1;
+    }
+
+    char *nom_repertoire = argv[1];
+    lire_dossier_iteratif(nom_repertoire);
+
+    return 0;
+}
 ```
 
-Le serveur répond
+Exécutez le programme en saisissant le nom d'un répertoire lors de l'exécution, et il affichera de manière itérative la liste des fichiers, répertoires et sous-répertoires présents dans ce répertoire et ses sous-répertoires en utilisant une approche itérative.
+
+## Exercice 5.4 [★★]
+
+### Client-Serveur
+
+![](../images/client-server.svg)
+
+**Simuler un environnement client-serveur en utilisant deux terminaux sur la même machine.**
+
+
+Le code fourni comprend deux programmes, le serveur (*serveur.c*) et le client (*client.c*), qui permettent de simuler un environnement client-serveur sur la même machine. Le serveur répond aux requêtes du client, ce qui permet de tester la communication entre les deux programmes.
+
+**Instructions**
+- Utilisez les fichiers *client.h*, *client.c*, *serveur.h*, *serveur.c*, et *Makefile*.
+- Compilez les fichiers en utilisant la commande `make`. Cela générera les fichiers exécutables pour le client (*client*) et le serveur (*serveur*).
+- Ouvrez deux terminaux.
+- Sur le premier terminal, exécutez le serveur en utilisant la commande `./serveur`.
+- Sur le second terminal, exécutez le client en utilisant la commande `./client`.
+- Saisissez un message dans le terminal du client, et observez les affichages sur les deux terminaux.
+- Modifiez la fonction `recois_envoie_message` dans le fichier *serveur.c*. Actuellement, le serveur renvoie le même message qu'il reçoit. Modifiez le code pour que le serveur demande à l'utilisateur de saisir un message et l'envoie au client.
+- Testez votre code en réexécutant le serveur et le client. Assurez-vous que le serveur renvoie le message saisi par l'utilisateur.
+
+Exemple d'utilisation:
+```
+Terminal 1 (Serveur):
+$ ./serveur
+Serveur en attente de connexions...
+Message reçu: message: Bonjour, le monde!!
+
+^C
+
+Signal Ctrl+C capturé. Sortie du programme.
+```
 
 ```
-calcule : 68              
+Terminal 2 (Client):
+$ ./client
+Votre message (max 1000 caractères): Bonjour, le monde!!
+Message reçu: message: Bonjour, le monde!!
 ```
 
-Testez votre code avec les numéros flottants et entiers.
-
-![](../../Projet/images/client-server-calcul.svg)
-
-### Exercice 5.6 [★★★]
+En suivant ces instructions, vous pourrez tester la communication entre le client et le serveur sur la même machine.
 
 
-Pour votre dernière question, téléchargez le dossier etudiant. Dans ce
-dossier, il y a 5 notes de 5 étudiants. Utilisez
-envoie_operateur_numeros (voir 6) pour calculer la somme total des
-notes de chaque étudiant ainsi que la moyenne de classe pour chaque
-sujet.
+![](../images/client-server-message.svg)
 
-Vous avez déjà implémenté la fonctionnalité permettant d'effectuer divers calculs comme l'addition,
-la multiplication côté serveur, mais en utilisant 2 nombres à la fois.
+## Exercice 5.5 [★★★]
 
-Le but de l'exercice final est de calculer la somme de 5 notes et la moyenne pour chaque élève 
-et pour la classe de 5 élèves (les détails sont stockés dans le répertoire). 
 
-Vous devez assurer une série d'opérations côté client pour obtenir ces résultats
+**Calcul**
 
-Par exemple, le client effectue une série d'appels suivants :
-```
-+ note1 note2
-+ note3 note4
-...
-/ somme 5
-```
+Mettre à jour les fichiers `client.c` et `serveur.c` pour prendre en charge les calculs simples (+, -, \*, ...) entre le client et le serveur en utilisant un nouveau format de message.
 
-Vous devrez modifier le serveur pour qu'il puisse lire et répondre aux messages du client dans une boucle infinie.  
+**Dans `client.c`** :
+1. Ajoutez une nouvelle fonction nommée `envoie_operateur_numeros` qui prendra en charge l'envoi d'opérations de calcul au serveur. Cette fonction devra accepter l'opérateur et un (ou deux) numéros en tant que paramètres.
+2. Utilisez cette fonction pour envoyer un message au serveur avec le format approprié. Par exemple, si l'utilisateur entre `calcule : + 23 45`, utilisez `envoie_operateur_numeros` pour envoyer cet opérateur et ces numéros au serveur.
 
-Pour cet exercice, le serveur ne doit pas lire d'informations provenant des fichiers de l'élève. Le but du serveur est d'effectuer des calculs arithmétiques simples. Seul le client peut lire les fichiers relatifs aux notes des élèves et envoyer une série de messages au serveur pour obtenir la somme totale, la moyenne, etc. 
+**Dans `serveur.c`** :
+1. Ajoutez une nouvelle fonction nommée `recois_numeros_calcule` qui prendra en charge la réception et le calcul des opérations envoyées par le client.
+2. Modifiez la boucle principale du serveur pour inclure la réception de messages du client et l'appel à `recois_numeros_calcule` lorsque le message commence par `calcule :`.
+3. Implémentez la logique nécessaire pour effectuer les calculs demandés par le client (par exemple, addition, soustraction, multiplication, etc.).
+4. Envoyez le résultat au client sous la forme d'un message.
 
-**Structure de données**: par exemple, liste (simplement chainée), pile, file
+**Exemple d'utilisation** :
+1. L'utilisateur entre `calcule : + 23 45` dans le client.
+2. Le client utilise `envoie_operateur_numeros` pour envoyer ce message au serveur.
+3. Le serveur reçoit le message et utilise `recois_numeros_calcule` pour extraire l'opérateur et les numéros.
+4. Le serveur effectue le calcul (dans ce cas, l'addition) et envoie le résultat au client.
+5. Le client affiche le résultat, par exemple, `calcule : 68`.
 
-### Fichiers
+En suivant ces instructions, vous pourrez mettre à jour votre système client-serveur pour prendre en charge les calculs simples entre le client et le serveur en utilisant un nouveau format de message.
+
+![](../images/client-server-calcul.svg)
+
+## Exercice 5.6 [★★★]
+
+**Calculs complexes**
+
+L'objectif de cet exercice final est de créer un client-serveur qui effectue des calculs sur les notes des étudiants. Le client doit lire les notes des étudiants à partir de fichiers et envoyer des messages au serveur pour effectuer des calculs tels que la somme des notes d'un étudiant et la moyenne de la classe. Le serveur doit être capable de lire et répondre aux messages du client dans une boucle infinie, en effectuant les calculs demandés.
+
+Instructions pour réaliser cet exercice :
+- Téléchargez le dossier "etudiant" qui contient les notes de 5 étudiants.
+
+- Assurez-vous que vous avez déjà implémenté la fonction `envoie_operateur_numeros` pour effectuer des calculs côté serveur en utilisant deux nombres à la fois.
+
+- Modifiez le serveur pour qu'il puisse lire et répondre aux messages du client dans une boucle infinie. Le serveur doit attendre les messages du client, effectuer les calculs appropriés en fonction des messages reçus, puis renvoyer les résultats au client.
+
+- Le client doit lire les notes des étudiants à partir des fichiers et envoyer une série de messages au serveur pour effectuer les calculs souhaités. Par exemple, le client peut envoyer des messages tels que :
+   - "+ note1 note2" pour demander la somme de deux notes.
+   - "+ note3 note4" pour demander la somme de deux notes.
+   - "+ somme note5" pour demander la somme.
+   - "/ somme 5" pour demander la moyenne des notes de 5 étudiants.
+
+- Le serveur doit être capable de comprendre ces messages, effectuer les calculs demandés, puis renvoyer les résultats au client.
+
+- Assurez-vous que le serveur ne lit pas directement les informations provenant des fichiers des étudiants. Le serveur ne doit effectuer que des calculs arithmétiques simples en fonction des messages du client.
+
+- Testez votre client-serveur en exécutant le serveur dans un terminal et le client dans un autre. Envoyez des messages au serveur pour effectuer différents calculs sur les notes des étudiants.
+
+- Assurez-vous que votre serveur peut gérer plusieurs demandes du client de manière séquentielle dans la boucle infinie.
+
+- Veillez à ce que les résultats renvoyés au client soient corrects et correspondent aux calculs demandés.
+
+En suivant ces instructions, vous pourrez créer un système client-serveur qui effectue des calculs sur les notes des étudiants en utilisant les messages du client pour déclencher les opérations côté serveur.
+
+## Fichiers
 
 *client.c, client.h, Makefile, repertoire.c, repertoire.h, serveur.c,
 serveur.h*
 
-### Instructions
+## Instructions
 
--   N'oubliez pas les commentaires (nom de fichier, objectif, auteurs,
-    , les lignes importantes de code etc.). Les commentaires sont notés.
--   N'oubliez pas de mettre à jour le fichier README.md et ajouter les
-    détails concernant votre deuxième exercice.
--   Compte rendu en format .zip en un seul fichier.
-
-
+- N'oubliez pas les commentaires (nom du fichier, objectif, auteurs, lignes importantes de code, etc.). Les commentaires sont notés.
+- N'oubliez pas de mettre à jour le fichier README.md et d'ajouter les détails.
+- Compte rendu au format .zip en un seul fichier.
