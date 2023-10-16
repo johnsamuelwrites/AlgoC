@@ -5,11 +5,6 @@
  *
  */
 
-/*
- * Le code côté serveur. L'objectif principal est de recevoir des messages des clients,
- * de traiter ces messages et de répondre aux clients.
- */
-
 #ifndef __SERVER_H__
 #define __SERVER_H__
 
@@ -19,6 +14,9 @@
  * envoyées par le client. En suite, le serveur envoie un message
  * en retour
  */
-int recois_envoie_message(int socketfd);
+
+const char *svg_file_path = "pie_chart.svg";
+
+int recois_envoie_message(int, char[1024]);
 
 #endif

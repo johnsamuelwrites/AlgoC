@@ -40,8 +40,6 @@ Il y a cinq tâches dans ce projet.
   - Ubuntu
   - Machine virtuelle (VirtualBox) + Ubuntu
 - Compilateur: gcc
-- Logiciels: gnuplot
-  - Installation: sudo apt install gnuplot gnuplot-x11
 
 **Algorithmes et structure de données**: par exemple, liste, pile, file, graphes
 
@@ -171,7 +169,7 @@ Références:
 1.  BMP : <https://fr.wikipedia.org/wiki/Windows_bitmap>
 2.  JSON : <https://fr.wikipedia.org/wiki/JavaScript_Object_Notation>
 
-### a. gnuplot
+### a. Firefox
 
 Téléchargez les fichiers suivants à partir d'e-campus : 
 bmp.h,, client.h, couleur.h, json.h, operations.c, serveur.c, testes.c, validation.c,
@@ -199,8 +197,7 @@ et sur le second terminal
 
 Le serveur reçois les dix premières couleurs de l'image analysé par le
 client et exécute une commande déjà existantes sur votre machine :
-gnuplot en utilisant popen. N'oubliez pas fermer gnuplot après chaque
-utilisation.
+firefox. 
 
 Les deux fichiers serveur.c et client.c sont initialement écris pour
 travailler avec dix premières couleurs. Modifiez les deux fichiers de

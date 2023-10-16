@@ -5,11 +5,6 @@
  *
  */
 
-/*
- * Code pour analyser les images du format BMP. L'objectif principal est d'obtenir les couleurs 
- * distinctes et leur nombre d'occurrences dans une image.
- */
-
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
