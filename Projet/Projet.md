@@ -8,25 +8,17 @@ L'objectif du projet est de créer un environnement client-serveur dédié à l'
 
 ## Client-Serveur
 
-Un environnement client-serveur permet un mode de communication sur un
-réseau entre les programmes. Un de ces programmes est appelé serveur qui
-répond aux requêtes d'autres programmes appelés clients. Par exemple,
-
-1.  Un client envoie un message au serveur et le serveur reçoit le
-    message et le renvoie.
-2.  Un client envoie l'opérateur et un/deux numéros et le serveur fait
-    le calcul et envoie le résultat.
+Un environnement client-serveur établit un mode de communication essentiel sur un réseau entre différents programmes. Le serveur, l'un de ces programmes, est chargé de répondre aux requêtes émanant d'autres programmes, désignés comme clients. À titre d'illustration, ce mécanisme permet à un client d'envoyer un message au serveur, qui le reçoit et renvoie une réponse. De même, un client peut transmettre un opérateur ainsi qu'un ou deux numéros au serveur, lequel effectue le calcul correspondant avant de renvoyer le résultat.
 
 Référence : <https://fr.wikipedia.org/wiki/Client-serveur>
 
-Dans ce projet, le serveur connaît uniquement les informations suivantes
-pour chaque client et stocke ces informations.
+Dans le cadre de ce projet, le serveur maintient une connaissance limitée des informations pour chaque client. Ces informations incluent :
 
--   Nom de la machine cliente
--   Balises (hashtags) d\'image distinctes sur l\'ordinateur client (par exemple,
-    chats, chiens, etc.)
--   Couleurs prédominantes des images sur la machine cliente (par
-    exemple, \# 2020DE, \# FF3E23, etc.)
+1. **Nom de la machine cliente:** Le serveur identifie chaque client par le nom de sa machine, assurant une gestion claire des connexions.
+2. **Balises (hashtags) d'image distinctes sur l'ordinateur client:** Pour chaque client, le serveur conserve une liste des balises d'image distinctes présentes sur l'ordinateur, telles que "chats," "chiens," etc. Cela facilite la catégorisation et l'indexation des images.
+3. **Couleurs prédominantes des images sur la machine cliente:** Le serveur enregistre également les couleurs prédominantes présentes dans les images de l'ordinateur client, en utilisant des codes de couleurs, par exemple, "#2020DE," "#FF3E23," etc. Cette information peut être utile pour des tâches telles que la recherche d'images similaires.
+
+
 
 Il y a cinq tâches dans ce projet. 
 
