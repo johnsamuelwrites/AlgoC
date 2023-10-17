@@ -2,12 +2,7 @@
 
 # Projet
 
-L\'objectif du projet est de créer un environnement client-serveur pour
-l\'analyse et la gestion des images et de leurs métadonnées. Cependant,
-contrairement aux applications client-serveur traditionnelles, nous
-n\'enverrons pas les images au serveur pour analyse, mais nous
-effectuerons une analyse d\'image côté client et enverrons des rapports
-de synthèse au serveur.
+L'objectif du projet est de créer un environnement client-serveur dédié à l'analyse et à la gestion d'images, y compris leurs métadonnées. Une caractéristique distinctive de notre approche réside dans notre gestion des données. Contrairement aux méthodes conventionnelles d'applications client-serveur, notre système n'envoie pas les images brutes au serveur pour analyse. Au contraire, nous optons pour une analyse d'image côté client, garantissant la confidentialité des données, puis nous transmettons uniquement des rapports de synthèse pertinents au serveur central. Cette approche assure un équilibre optimal entre l'efficacité de l'analyse d'image et le respect de la vie privée des utilisateurs.
 
 ![](./images/client-server.svg)
 
