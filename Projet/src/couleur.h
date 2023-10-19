@@ -88,4 +88,6 @@ void print_couleur_compteur(couleur_compteur *);
 // trier le compte de couleurs distincts
 void trier_couleur_compteur(couleur_compteur *);
 
+void liberer_memoire(couleur_compteur *);
+
 #endif

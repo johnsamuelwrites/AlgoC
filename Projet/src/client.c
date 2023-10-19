@@ -88,6 +88,7 @@ void analyse(char *pathname, char *data)
 
   // enlever le dernier virgule
   data[strlen(data) - 1] = '\0';
+  liberer_memoire(cc);
 }
 
 int envoie_couleurs(int socketfd, char *pathname)

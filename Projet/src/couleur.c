@@ -11,6 +11,42 @@
 #include <stdlib.h>
 #include <search.h>
 
+void liberer_memoire_couleur(couleur *c)
+{
+  if (c)
+  {
+    if (c->compte_bit == BITS24)
+    {
+      free(c->c.c24);
+      c->c.c24 = NULL;
+    }
+    else if (c->compte_bit == BITS32)
+    {
+      free(c->c.c32);
+      c->c.c32 = NULL;
+    }
+  }
+}
+
+void liberer_memoire(couleur_compteur *compte_couleur)
+{
+  if (compte_couleur)
+  {
+    if (compte_couleur->compte_bit == BITS24)
+    {
+      free(compte_couleur->cc.cc24);
+      compte_couleur->cc.cc24 = NULL;
+    }
+    else if (compte_couleur->compte_bit == BITS32)
+    {
+      free(compte_couleur->cc.cc32);
+      compte_couleur->cc.cc32 = NULL;
+    }
+    free(compte_couleur);
+    compte_couleur = NULL;
+  }
+}
+
 // compter les couleurs distincts
 couleur_compteur *compte_couleur(couleur *c, int csize)
 {
@@ -120,6 +156,7 @@ couleur_compteur *compte_couleur(couleur *c, int csize)
   compteur->size = compteur_size;
 
   hdestroy();
+  liberer_memoire_couleur(c);
   return compteur;
 }
 
