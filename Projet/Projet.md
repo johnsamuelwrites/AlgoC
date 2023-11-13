@@ -219,11 +219,11 @@ format de messages JSON. Par exemple,
               }
               {
                 "code" : "couleurs",
-                "valeurs" : [ "#0effeee", "#0effe23", ...]
+                "valeurs" : [ 10, "#0effeee", "#0effe23", ...]
               }
               {
                 "code" : "balises",
-                "valeurs" : [ "#nature", "#arbre", ...]
+                "valeurs" : [ 10, "#nature", "#arbre", ...]
               }
 ```
 
