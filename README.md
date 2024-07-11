@@ -1,7 +1,9 @@
 # AlgoC
 Sujets de travaux pratiques du module **Algorithmes et C appliqués aux Systèmes Numériques**
 
-## Année: 2022-2023
+## Années académiques
+Ces travaux pratiques ont fait partie des cours entre les années académiques 2018 et 2023.
+
 ### Sujets de travaux pratiques (Groupe 1 - TP)
 - [TP1](Groupe1/TP1/TP1.md)
 - [TP2](Groupe1/TP2/TP2.md)
